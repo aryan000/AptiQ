@@ -21,8 +21,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!--//theme-style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Real Home Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
-Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<meta name="keywords" content=" " />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 </head>
 <body>
@@ -31,12 +30,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="container-fluid">
 				<nav class="pull">
 					<ul>
-						<li><a  href="{% url 'account.views.index' %} ">Home</a></li>
-						<li><a  href="{% url 'account.views.about' %} ">About Us</a></li>
-						<li><a  href="{% url 'account.views.blog' %} ">Blog</a></li>
-						<li><a  href="{% url 'account.views.terms' %}">Terms</a></li>
-						<li><a  href="{% url 'account.views.privacy' %}">Privacy</a></li>
-						<li><a  href="{% url 'account.views.contact' %}">Contact</a></li>
+						<li><a  href="{% url 'mainaccount.views.index' %} ">Home</a></li>
+						<li><a  href="{% url 'mainaccount.views.about' %} ">About Us</a></li>
+						<li><a  href="{% url 'mainaccount.views.blog' %} ">Blog</a></li>
+						<li><a  href="{% url 'mainaccount.views.terms' %}">Terms</a></li>
+						<li><a  href="{% url 'mainaccount.views.privacy' %}">Privacy</a></li>
+						<li><a  href="{% url 'mainaccount.views.contact' %}">Contact</a></li>
 					</ul>
 				</nav>			
 			</div>
@@ -46,13 +45,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="container">
 		<!--logo-->
 			<div class="logo">
-				<h1><a href="{% url 'account.views.index' %}">Apti</a><a font color="blue" href="{% url 'account.views.index' %}">Q</a></h1>
+				<h1><a href="{% url 'mainaccount.views.index' %}">Apti</a><a font color="blue" href="{% url 'mainaccount.views.index' %}">Q</a></h1>
 			</div>
 		<!--//logo-->
 		<div class="top-nav">
 			<ul class="right-icons">
 				<li><span ><i class="glyphicon glyphicon-phone"> </i>+91 011 22568989</span></li>
-				<li><a  href="main_login.php"><i class="glyphicon glyphicon-user"> </i>Login</a></li>
+				<li><a  href="{% url 'auth_login' %}"><i class="glyphicon glyphicon-user"> </i>Login</a></li>
 				<li><a class="play-icon popup-with-zoom-anim" href="#small-dialog"><i class="glyphicon glyphicon-search"> </i> </a></li>
 				
 			</ul>
@@ -150,21 +149,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class=" container">
 	<h3><span>Abo</span>ut</h3> 
 	<!---->
-	<!--div class="menu-right">
-		 <ul class="menu">
-			<li class="item1"><a href="#"> Menu<i class="glyphicon glyphicon-menu-down"> </i> </a>
-			<ul class="cute">
-				<li class="subitem1"><a href="{% url 'account.views.buy' %}">Buy </a></li>
-				<li class="subitem2"><a href="{% url 'account.views.buy' %}">Rent </a></li>
-				<li class="subitem3"><a href="{% url 'account.views.buy' %}">Hostels </a></li>
-				<li class="subitem1"><a href="{% url 'account.views.buy' %}">Resale </a></li>
-				<li class="subitem2"><a href="loan.html">Home Loan</a></li>
-				<li class="subitem3"><a href="{% url 'account.views.buy' %}">Apartment </a></li>
-				<li class="subitem3"><a href="dealers.html">Dealers</a></li>
-			</ul>
-		</li>
-		</ul>
-	</div-->
+	 
 	<div class="clearfix"> </div>
 		<!--initiate accordion-->
 		<script type="text/javascript">
@@ -195,8 +180,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<h3>About Us</h3>
 				<div class="about-in">
-					<a href="{% url 'account.views.blog_single' %}"><img src="/static/images/at.jpg" alt="image" class="img-responsive ">	</a>			
-					<h6 ><a href="{% url 'account.views.blog_single' %}">AptiQ is assessment and hiring platform. We run assessments to measure employability across all domains - from programming to plumbing.</a></h6>
+					<a href="{% url 'mainaccount.views.blog_single' %}"><img src="/static/images/at.jpg" alt="image" class="img-responsive ">	</a>			
+					<h6 ><a href="{% url 'mainaccount.views.blog_single' %}">AptiQ is assessment and hiring platform. We run assessments to measure employability across all domains - from programming to plumbing.</a></h6>
 					<p>AptiQ works with corporate clients to execute entry level and lateral assessments and has access to  candidates through its platform. We run assessments ; thus, everyday helping our corporate clients reduce interview bandwidth using our central assessment platform, helping our institutional clients measure and improve employability and helping candidates move ahead on their career path. Our vision is to ensure that everyone in the country gets an equal opportunity to build a career. We are the visionaries of this space with a strong growth trajectory and an exciting firm to be with!</p>
 				</div>
 		</div>
@@ -206,14 +191,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">		
 			<div class="col-md-8 about-mid">
 				<h4>AptiQ</h4>
-				<h6><a href="{% url 'account.views.blog_single' %}">At AptiQ, we deeply believe that psychometrics can create personal and organizational benefits that no other means can deliver. </a> </h6>
+				<h6><a href="{% url 'mainaccount.views.blog_single' %}">At AptiQ, we deeply believe that psychometrics can create personal and organizational benefits that no other means can deliver. </a> </h6>
 				<p >    AptiQ is platform in the design and implementation of innovative online tests and questionnaires for recruitment, selection and development.
     We carry out over different assessments.
     AptiQ helps companies identify people with the right capabilities and cultural fit to deliver optimal business results.</p>
 			</div>
 			<div class="col-md-4 about-mid1">
 				<p>Our products integrate seamlessly so that you get the information you need</p>
-				<a href="{% url 'account.views.blog_single' %}" class="hvr-sweep-to-right more-in">READ MORE</a>
+				<a href="{% url 'mainaccount.views.blog_single' %}" class="hvr-sweep-to-right more-in">READ MORE</a>
 			</div>
 			<div class="clearfix"> </div>
 		</div>
@@ -281,13 +266,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="about-bottom">
 		<div class="container">
 				<div class="col-md-6 bottom-about">
-					<h4><a href="{% url 'account.views.blog_single' %}">We understand every organization is different. That's why we've created  online testing plans to suit your needs. From occasional usage to bulk testing requirements, we have you covered. </a></h4>
+					<h4><a href="{% url 'mainaccount.views.blog_single' %}">We understand every organization is different. That's why we've created  online testing plans to suit your needs. From occasional usage to bulk testing requirements, we have you covered. </a></h4>
 					<p> The AptiQ hosted online testing software is the  quiz maker for teachers & businesses. Used for business & training tests; recruitment & pre-employment assessments; educational facilities, schools, universities, distance learning, online courses, E-Learning, self-study groups, practice tests & more.
 
 Optionally charge for your exams, so you can sell quizzes online and receive payments instantly.
 
 Custom web-based testing services allow you to easily create & give secure online exams to your exact requirements with features such as time limits, public & private test access, randomize questions, instant feedback, multiple choice, short answer, essay & more question types. </p>
-					<a href="{% url 'account.views.blog_single' %}" class="hvr-sweep-to-right more">Read More</a>
+					<a href="{% url 'mainaccount.views.blog_single' %}" class="hvr-sweep-to-right more">Read More</a>
 				</div>
 				<div class="col-md-6 bottom-about1">
 					<iframe src="https://player.vimeo.com/video/12690053"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
@@ -303,26 +288,26 @@ Custom web-based testing services allow you to easily create & give secure onlin
 					<div class="col-md-4 new-more">
 						<div class="event">
 							<h4>26/06/2015</h4>
-							<h6><a href="{% url 'account.views.blog_single' %}">Sed ut perspiciatis unde omnis </a></h6>
+							<h6><a href="{% url 'mainaccount.views.blog_single' %}">Sed ut perspiciatis unde omnis </a></h6>
 						</div>
 						<p>Kasertas lertyasea deeraeser miasera lertasa ritise doloert ferdas caplicabo nerafaes asety u lasec vaserat. nikertyade asetkertyptaiades goertayse.nikertyade asetkertyptaiades goertayse</p>
-						<a class="hvr-sweep-to-right more" href="{% url 'account.views.blog_single' %}">Read More</a>
+						<a class="hvr-sweep-to-right more" href="{% url 'mainaccount.views.blog_single' %}">Read More</a>
 					</div>
 					<div class="col-md-4 new-more">
 						<div class="event">
 							<h4>26/06/2015</h4>
-							<h6><a href="{% url 'account.views.blog_single' %}">Sed ut perspiciatis unde omnis </a></h6>
+							<h6><a href="{% url 'mainaccount.views.blog_single' %}">Sed ut perspiciatis unde omnis </a></h6>
 						</div>
 						<p>Kasertas lertyasea deeraeser miasera lertasa ritise doloert ferdas caplicabo nerafaes asety u lasec vaserat. nikertyade asetkertyptaiades goertayse.nikertyade asetkertyptaiades goertayse</p>
-						<a class="hvr-sweep-to-right more" href="{% url 'account.views.blog_single' %}">Read More</a>
+						<a class="hvr-sweep-to-right more" href="{% url 'mainaccount.views.blog_single' %}">Read More</a>
 					</div>
 					<div class="col-md-4 new-more">
 						<div class="event">
 							<h4>26/06/2015</h4>
-							<h6><a href="{% url 'account.views.blog_single' %}">Sed ut perspiciatis unde omnis </a></h6>
+							<h6><a href="{% url 'mainaccount.views.blog_single' %}">Sed ut perspiciatis unde omnis </a></h6>
 						</div>
 						<p>Kasertas lertyasea deeraeser miasera lertasa ritise doloert ferdas caplicabo nerafaes asety u lasec vaserat. nikertyade asetkertyptaiades goertayse.nikertyade asetkertyptaiades goertayse</p>
-						<a class="hvr-sweep-to-right more" href="{% url 'account.views.blog_single' %}">Read More</a>
+						<a class="hvr-sweep-to-right more" href="{% url 'mainaccount.views.blog_single' %}">Read More</a>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
@@ -330,26 +315,26 @@ Custom web-based testing services allow you to easily create & give secure onlin
 					<div class="col-md-4 new-more">
 						<div class="event">
 							<h4>26/06/2015</h4>
-							<h6><a href="{% url 'account.views.blog_single' %}">Sed ut perspiciatis unde omnis </a></h6>
+							<h6><a href="{% url 'mainaccount.views.blog_single' %}">Sed ut perspiciatis unde omnis </a></h6>
 						</div>
 						<p>Kasertas lertyasea deeraeser miasera lertasa ritise doloert ferdas caplicabo nerafaes asety u lasec vaserat. nikertyade asetkertyptaiades goertayse.nikertyade asetkertyptaiades goertayse</p>
-						<a class="hvr-sweep-to-right more" href="{% url 'account.views.blog_single' %}">Read More</a>
+						<a class="hvr-sweep-to-right more" href="{% url 'mainaccount.views.blog_single' %}">Read More</a>
 					</div>
 					<div class="col-md-4 new-more">
 						<div class="event">
 							<h4>26/06/2015</h4>
-							<h6><a href="{% url 'account.views.blog_single' %}">Sed ut perspiciatis unde omnis </a></h6>
+							<h6><a href="{% url 'mainaccount.views.blog_single' %}">Sed ut perspiciatis unde omnis </a></h6>
 						</div>
 						<p>Kasertas lertyasea deeraeser miasera lertasa ritise doloert ferdas caplicabo nerafaes asety u lasec vaserat. nikertyade asetkertyptaiades goertayse.nikertyade asetkertyptaiades goertayse</p>
-						<a class="hvr-sweep-to-right more" href="{% url 'account.views.blog_single' %}">Read More</a>
+						<a class="hvr-sweep-to-right more" href="{% url 'mainaccount.views.blog_single' %}">Read More</a>
 					</div>
 					<div class="col-md-4 new-more">
 						<div class="event">
 							<h4>26/06/2015</h4>
-							<h6><a href="{% url 'account.views.blog_single' %}">Sed ut perspiciatis unde omnis </a></h6>
+							<h6><a href="{% url 'mainaccount.views.blog_single' %}">Sed ut perspiciatis unde omnis </a></h6>
 						</div>
 						<p>Kasertas lertyasea deeraeser miasera lertasa ritise doloert ferdas caplicabo nerafaes asety u lasec vaserat. nikertyade asetkertyptaiades goertayse.nikertyade asetkertyptaiades goertayse</p>
-						<a class="hvr-sweep-to-right more" href="{% url 'account.views.blog_single' %}">Read More</a>
+						<a class="hvr-sweep-to-right more" href="{% url 'mainaccount.views.blog_single' %}">Read More</a>
 					</div>
 					<div class="clearfix"> </div>
 				</div>
@@ -365,12 +350,12 @@ Custom web-based testing services allow you to easily create & give secure onlin
 			<div class="col-md-3 amet-sed">
 				<h4>Our Company</h4>
 				<ul class="nav-bottom">
-					<li><a href="{% url 'account.views.about'%}">About Us</a></li>
-					<li><a href="{% url 'account.views.blog'%}">For Sale By Owner Blog</a></li>
-					<li><a href="{% url 'account.views.mobile_app'%}">Mobile</a></li>
-					<li><a href="{% url 'account.views.terms'%}'">Terms & Conditions</a></li>
-					<li><a href="{% url 'account.views.privacy' %}">Privacy Policy</a></li>	
-					<li><a href="{% url 'account.views.blog' %}">Blog</a></li>
+					<li><a href="{% url 'mainaccount.views.about'%}">About Us</a></li>
+					<li><a href="{% url 'mainaccount.views.blog'%}">For Sale By Owner Blog</a></li>
+					<li><a href="{% url 'mainaccount.views.mobile_app'%}">Mobile</a></li>
+					<li><a href="{% url 'mainaccount.views.terms'%}'">Terms & Conditions</a></li>
+					<li><a href="{% url 'mainaccount.views.privacy' %}">Privacy Policy</a></li>	
+					<li><a href="{% url 'mainaccount.views.blog' %}">Blog</a></li>
 					
 				</ul>	
 			</div>
@@ -378,11 +363,11 @@ Custom web-based testing services allow you to easily create & give secure onlin
 				<h4>Work With Us</h4>
 					<ul class="nav-bottom">
 						
-						<li><a href="{% url 'account.views.single' %}">Business Development</a></li>
-						<li><a href="{% url 'account.views.single' %}">Affiliate Programs</a></li>
-						<li><a href="{% url 'account.views.contact' %}">Sitemap</a></li>
-						<li><a href="{% url 'account.views.career' %}">Careers</a></li>
-						<li><a href="{% url 'account.views.feedback' %}">Feedback</a></li>	
+						<li><a href="{% url 'mainaccount.views.single' %}">Business Development</a></li>
+						<li><a href="{% url 'mainaccount.views.single' %}">Affiliate Programs</a></li>
+						<li><a href="{% url 'mainaccount.views.contact' %}">Sitemap</a></li>
+						<li><a href="{% url 'mainaccount.views.career' %}">Careers</a></li>
+						<li><a href="{% url 'mainaccount.views.feedback' %}">Feedback</a></li>	
 					</ul>	
 			</div>
 			<div class="col-md-3 amet-sed">
@@ -392,8 +377,8 @@ Custom web-based testing services allow you to easily create & give secure onlin
 				<p>177-869-6559</p>
 					<ul class="nav-bottom">
 						<li><a href="#">Live Chat</a></li>
-						<li><a href="{% url 'account.views.faqs' %} ">Frequently Asked Questions</a></li>
-						<li><a href="{% url 'account.views.suggestion' %}">Make a Suggestion</a></li>
+						<li><a href="{% url 'mainaccount.views.faqs' %} ">Frequently Asked Questions</a></li>
+						<li><a href="{% url 'mainaccount.views.suggestion' %}">Make a Suggestion</a></li>
 					</ul>	
 			</div>
 			<div class="col-md-3 amet-sed ">
@@ -419,10 +404,10 @@ Custom web-based testing services allow you to easily create & give secure onlin
 	<div class="footer-bottom">
 		<div class="container">
 			<div class="col-md-4 footer-logo">
-				<h2><a href="{% url 'account.views.index' %}">Apti -Q</a></h2>
+				<h2><a href="{% url 'mainaccount.views.index' %}">Apti -Q</a></h2>
 			</div>
 			<div class="col-md-8 footer-class">
-				<p >© 2015 AptiQ. All Rights Reserved | Design by  <a href="{% url 'account.views.buy' %}" target="_blank">DTU guys</a> </p>
+				<p >© 2015 AptiQ. All Rights Reserved | Design by  <a href="{% url 'mainaccount.views.buy' %}" target="_blank">DTU guys</a> </p>
 			</div>
 		<div class="clearfix"> </div>
 	 	</div>

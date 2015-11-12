@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block title %} Contact - {{ block.suepr }} {% endblock %}
+{% block loginhead %} Contact {% endblock %}
+{% block content %}
+ <form role="form" action="" method = "POST">
+{% csrf_token %}
+{{ form.as_p }}
+
+<button type="submit" > Submit </button>
+</form>
+{% endblock %}

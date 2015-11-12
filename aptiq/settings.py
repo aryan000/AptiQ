@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/1.8/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.8/ref/settings/
 """
-AUTH_USER_MODEL = 'session.MyUser'
+# AUTH_USER_MODEL = 'session.MyUser'
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 
@@ -25,6 +25,15 @@ SECRET_KEY = 'hy*2u5^+c%ef14smen8@qo-6_n47a3bf4=b_gp%4!s2*rykg^#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+ALLOWED_HOSTS = ["127.0.0.1:8000",]
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'contactaptiq@gmail.com'
+EMAIL_HOST_PASSWORD = 'aptiq123'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True 
+DEFAULT_FROM_EMAIL = 'contactaptiq@gmail.com'
+ 
+
 ALLOWED_HOSTS = []
 
 
@@ -34,12 +43,17 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
-    'django.contrib.sessions',
+    'django.contrib.sites',
+    # 'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'account',
-    'feedback',
-    'session',
+    # 'account',
+    'mainaccount',
+    'registration',
+    'crispy_forms',
+
+
+    
 )
 
 MIDDLEWARE_CLASSES = (
@@ -109,3 +123,12 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
     '/var/www/static/',
 ) 
+
+#Crispy form tags settings
+CRISPY_TEMPLATE_PACK = 'bootstrap3'
+
+# django registration redux settings
+ACCOUNT_ACTIVATION_DAYS = 7
+REGISTRATION_AUTO_LOGIN = True
+SITE_ID  = 2
+LOGIN_REDIRECT_URL = '/test'

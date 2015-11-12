@@ -25,7 +25,7 @@ def career(request):
 def contact(request):
 	return render(request,"contact.html")
 
-def dealers(request):
+def dealer(request):
 	return render(request,"dealers.html")
 
 def dealers(request):

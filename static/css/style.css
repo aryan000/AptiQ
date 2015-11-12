@@ -2816,11 +2816,10 @@ p.privacy-para {
 	outline: none;
   	width: 100%;
   	padding: 0.5em 1em;
-  	border: none;
+  	border:  none;
   	font-size: 0.9em;
-  	border: none;
-  	cursor: pointer;
-  	background:none;
+   	cursor: pointer;
+  	background:#80BFFF;
 }
 ul.login-icons li {
 	 display: inline-block;

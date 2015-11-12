@@ -1,0 +1,39 @@
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+ {% include "header.html" %}
+ {% include "head_css.html" %}
+<link href="/static/css/navbar-static-top.css" rel="stylesheet">
+ <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+  
+<!--contact-->
+<div class="login-right">
+	<div class="container">
+		<h3>{% block loginhead %} {% endblock %}</h3>
+		<div class="login-top">
+				<ul class="login-icons">
+					<li><a href="#" ><i class="facebook"> </i><span>Facebook</span></a></li>
+					<li><a href="#" class="twit"><i class="twitter"></i><span>Twitter</span></a></li>
+					<li><a href="#" class="go"><i class="google"></i><span>Google +</span></a></li>
+					<li><a href="#" class="in"><i class="linkedin"></i><span>Linkedin</span></a></li>
+					<div class="clearfix"> </div>
+				</ul>
+				<div class="form-info">
+					<form method="post" action="" >
+						  {% block content %}
+
+				           {% endblock %}
+					</form>
+			   
+			   <div class="form"
+					<div class="col-md-3"> 
+						<p>  Already have a AptiQ mainaccount? <a type="button" class="btn btn-primary btn-sm" href="{% url 'auth_login'	 %}">Login</a></p>
+					</div>
+				</div>
+			 
+			
+	</div>
+</div>
+</div>
+{% include "footer.html" %}
+</body>
+</html>

@@ -31,12 +31,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="container-fluid">
 				<nav class="pull">
 					<ul>
-						<li><a  href="{% url 'account.views.index' %} ">Home</a></li>
-						<li><a  href="{% url 'account.views.about' %} ">About Us</a></li>
-						<li><a  href="{% url 'account.views.blog' %} ">Blog</a></li>
-						<li><a  href="{% url 'account.views.terms' %}">Terms</a></li>
-						<li><a  href="{% url 'account.views.privacy' %}">Privacy</a></li>
-						<li><a  href="{% url 'account.views.contact' %}">Contact</a></li>
+						<li><a  href="{% url 'mainaccount.views.index' %} ">Home</a></li>
+						<li><a  href="{% url 'mainaccount.views.about' %} ">About Us</a></li>
+						<li><a  href="{% url 'mainaccount.views.blog' %} ">Blog</a></li>
+						<li><a  href="{% url 'mainaccount.views.terms' %}">Terms</a></li>
+						<li><a  href="{% url 'mainaccount.views.privacy' %}">Privacy</a></li>
+						<li><a  href="{% url 'mainaccount.views.contact' %}">Contact</a></li>
 					</ul>
 				</nav>			
 			</div>
@@ -46,7 +46,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="container">
 		<!--logo-->
 			<div class="logo">
-				<h1><a href="index.html">Apti</a><a font color="blue" href="index.html">Q</a></h1>
+				<h1><a href="{% url 'mainaccount.views.index' %}">Apti</a><a font color="blue" href="{% url 'mainaccount.views.index' %}">Q</a></h1>
 			</div>
 		<!--//logo-->
 		<div class="top-nav">
@@ -150,13 +150,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		 <ul class="menu">
 			<li class="item1"><a href="#"> Menu<i class="glyphicon glyphicon-menu-down"> </i> </a>
 			<ul class="cute">
-				<li class="subitem1"><a href="buy.html">Buy </a></li>
-				<li class="subitem2"><a href="buy.html">Rent </a></li>
-				<li class="subitem3"><a href="buy.html">Hostels </a></li>
-				<li class="subitem1"><a href="buy.html">Resale</a></li>
-				<li class="subitem2"><a href="loan.html">Home Loan</a></li>
-				<li class="subitem3"><a href="buy.html">Apartment </a></li>
-				<li class="subitem3"><a href="dealers.html">Dealers</a></li>
+				<li class="subitem1"><a href="{% url 'mainaccount.views.buy' %}">Buy </a></li>
+				<li class="subitem2"><a href="{% url 'mainaccount.views.buy' %}">Rent </a></li>
+				<li class="subitem3"><a href="{% url 'mainaccount.views.buy' %}">Hostels </a></li>
+				<li class="subitem1"><a href="{% url 'mainaccount.views.buy' %}">Resale</a></li>
+				<li class="subitem2"><a href="{% url 'mainaccount.views.loan' %}">Home Loan</a></li>
+				<li class="subitem3"><a href="{% url 'mainaccount.views.buy' %}">Apartment </a></li>
+				<li class="subitem3"><a href="{% url 'mainaccount.views.dealers' %}">Dealers</a></li>
 			</ul>
 		</li>
 		</ul>
@@ -210,12 +210,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-3 amet-sed">
 				<h4>Our Company</h4>
 				<ul class="nav-bottom">
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="blog.html">For Sale By Owner Blog</a></li>
-					<li><a href="mobile_app.html">Mobile</a></li>
-					<li><a href="terms.html">Terms & Conditions</a></li>
-					<li><a href="privacy.html">Privacy Policy</a></li>	
-					<li><a href="blog.html">Blog</a></li>
+					<li><a href="{% url 'mainaccount.views.about'%}">About Us</a></li>
+					<!--<li><a href="blog.html"> Blog</a></li>-->
+					<li><a href="{% url 'mainaccount.views.mobile_app'%}">Mobile</a></li>
+					<li><a href="{% url 'mainaccount.views.terms'%}">Terms & Conditions</a></li>
+					<li><a href="{% url 'mainaccount.views.privacy'%}">Privacy Policy</a></li>	
+					<li><a href="{% url 'mainaccount.views.blog'%}">Blog</a></li>
 					
 				</ul>	
 			</div>
@@ -223,11 +223,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<h4>Work With Us</h4>
 					<ul class="nav-bottom">
 						
-						<li><a href="single.html">Business Development</a></li>
-						<li><a href="single.html">Affiliate Programs</a></li>
-						<li><a href="contact.html">Sitemap</a></li>
-						<li><a href="career.html">Careers</a></li>
-						<li><a href="feedback.html">Feedback</a></li>	
+						<!--<li><a href="single.html">Real Estate Brokers</a></li>-->
+						<li><a href="{% url 'mainaccount.views.single' %}">Business Development</a></li>
+						<li><a href="{% url 'mainaccount.views.single' %}">Affiliate Programs</a></li>
+						<li><a href="{% url 'mainaccount.views.contact' %}">Sitemap</a></li>
+						<li><a href="{% url 'mainaccount.views.career' %}">Careers</a></li>
+						<li><a href="{% url 'mainaccount.views.feedback' %}">Feedback</a></li>
 					</ul>	
 			</div>
 			<div class="col-md-3 amet-sed">
@@ -237,8 +238,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<p>177-869-6559</p>
 					<ul class="nav-bottom">
 						<li><a href="#">Live Chat</a></li>
-						<li><a href="faqs.html">Frequently Asked Questions</a></li>
-						<li><a href="suggestion.html">Make a Suggestion</a></li>
+						<li><a href="{% url 'mainaccount.views.faqs' %}">Frequently Asked Questions</a></li>
+						<li><a href="{% url 'mainaccount.views.suggestion' %}">Make a Suggestion</a></li>
 					</ul>	
 			</div>
 			<div class="col-md-3 amet-sed ">
@@ -264,7 +265,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="footer-bottom">
 		<div class="container">
 			<div class="col-md-4 footer-logo">
-				<h2><a href="index.html">Apti -Q</a></h2>
+				<h2><a href="{% url 'mainaccount.views.index' %}">Apti -Q</a></h2>
 			</div>
 			<div class="col-md-8 footer-class">
 				<p >© 2015 AptiQ. All Rights Reserved | Design by  <a href="buy.html" target="_blank">DTU guys</a> </p>
