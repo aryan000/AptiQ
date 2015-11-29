@@ -110,7 +110,24 @@ def blog_single(request):
 	
 def typo(request):
 	return render(request,"typo.html")
-def test(request):
+def sampletest(request):
 	return render(request,"test.html")
+
+def starttest(request):
+	return render(request,"starttest.html") 
+
+def leveltest(request):
+	return render(request,"leveltest.html")
+def leveltest2(request):
+	return render(request,"leveltest2.html")
+def graph4beg(request):
+	return render(request,"g4b.html")
+
+def p2b(request):
+	return render(request,"p2b.html")
+
+def p3b(request):
+	return render(request,"p3b.html")
+
 
  

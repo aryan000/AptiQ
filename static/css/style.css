@@ -30,6 +30,9 @@ body a{
 h1,h2,h3,h4,h5,h6,label,p{
 	margin:0;	
 }
+#cont1,#cont2{
+	visibility: hidden;
+}
 /*----*/
 .logo {
   float: left;

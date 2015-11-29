@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="/static/js/Chart.js"></script>
+</head>
+<body>
+<script>
+  var query = window.location.search;
+  // Skip the leading ?, which should always be there, 
+  // but be careful anyway
+  if (query.substring(0, 1) == '?') {
+    query = query.substring(1);
+  }
+  var can = query.split(','); 
+  for (i = 0; (i < can.length); i++) {
+    can[i] = unescape(can[i]);
+  }
+</script>
+<div style="width:50%" align="left"><h1> QUESTION WISE ANALYSIS</h1>
+<ul>
+<script>
+  for (i = 0; (i < can.length); i++) {
+    document.write("<li>" + can[i] + "</li>\n");
+  }
+</script>
+</ul>
+</div>
+
+<div style="width:50%">
+      <div>
+        <canvas id="canvas2" height="450" width="600"></canvas>
+      </div>
+    </div>
+
+
+
+
+  <script>
+    var ra = function(i){ return can[i]};
+    var lineChartData = {
+      labels : ["q1","q2","q3","q4"],
+      datasets : [
+        {
+          label: "My First dataset",
+          fillColor : "rgba(220,220,220,0.2)",
+          strokeColor : "rgba(220,220,220,1)",
+          pointColor : "rgba(220,220,220,1)",
+          pointStrokeColor : "#fff",
+          pointHighlightFill : "#fff",
+          pointHighlightStroke : "rgba(220,220,220,1)",
+          data : [ra(0),ra(1),ra(2),ra(3)]
+        },
+        {
+          label: "My Second dataset",
+          fillColor : "rgba(151,187,205,0.2)",
+          strokeColor : "rgba(151,187,205,1)",
+          pointColor : "rgba(151,187,205,1)",
+          pointStrokeColor : "#fff",
+          pointHighlightFill : "#fff",
+          pointHighlightStroke : "rgba(151,187,205,1)",
+          data : [ra(0),ra(1),ra(2),ra(3)]
+        }
+      ]
+
+    }
+
+  window.onload = function(){
+    var ctx = document.getElementById("canvas2").getContext("2d");
+    window.myLine = new Chart(ctx).Line(lineChartData, {
+      responsive: true
+    });
+  }
+
+
+
+</body>
+</html>

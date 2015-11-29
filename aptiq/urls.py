@@ -45,9 +45,16 @@ urlpatterns = [
     url(r'^index/blog_single$','mainaccount.views.blog_single',name='blog_single'),
     url(r'^about$','mainaccount.views.about',name='about'),
     url(r'^accounts/', include('registration.backends.default.urls')),
-    url(r'^test$','mainaccount.views.test',name='test'),
+    url(r'^sample/test$','mainaccount.views.sampletest',name='sampletest'),
     url(r'^index/contact$','mainaccount.views.contact',name='contact'),
     url(r'^contact$','mainaccount.views.contact1',name='contact1'),
+    url(r'^starttest$','mainaccount.views.starttest',name='starttest'),
+    url(r'^leveltest$','mainaccount.views.leveltest',name='leveltest'),
+    url(r'^graph4beg$','mainaccount.views.graph4beg',name='graph4beg'),
+    url(r'^level2$','mainaccount.views.leveltest2',name='leveltest2'),
+    url(r'^p2b$','mainaccount.views.p2b',name='p2b'),
+    url(r'^p3b$','mainaccount.views.p3b',name='p3b'),
+    # url(r'^graph4beg$','mainaccount.views.graph4beg',name='graph4beg'),
 
 
 

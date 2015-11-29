@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> LEVEL 2: Beginner:2 </title>
+<link type="text/css" rel="stylesheet" href="/static/css/flipclock.css" />
+
+<link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="/static/js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<!--menu-->
+<script src="/static/js/scripts.js"></script>
+<link href="/static/css/styles.css" rel="stylesheet">
+<!--//menu-->
+<!--theme-style-->
+<link href="/static/css/style.css" rel="stylesheet" type="text/css" media="all" />	
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content=" " />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- slide -->
+<script src="js/responsiveslides.min.js"></script>
+   <script>
+    $(function () {
+      $("#slider").responsiveSlides({
+      	auto: true,
+      	speed: 500,
+        namespace: "callbacks",
+        pager: true,
+      });
+    });
+  </script>
+<meta charset="UTF-8">
+<style>
+div#test{ border:#000 1px solid; padding:50px 100px 100px 100px; }
+</style>
+<script>
+var pos = 0, test, test_status, question, choice, choices, chA, chB, chC, correct = 0;
+var can=[];
+var questions = [
+    [ " 1.A can do a work in 15 days and B in 20 days. If they work on it together for 4 days, then the fraction of the work that is left is :","1/4","1/10","8/15","C"],
+	[ "2.A can lay railway track between two given stations in 16 days and B can do the same job in 12 days. With help of C, they did the job in 4 days only. Then, C alone can do the job in:","46/5 days","47/5 days","48/5 days","C" ],
+	[ "3.  A, B and C can do a piece of work in 20, 30 and 60 days respectively. In how many days can A do the work if he is assisted by B and C on every third day?:","12days","15days","16days","B" ],
+	[ "4.  A is thrice as good as workman as B and therefore is able to finish a job in 60 days less than B. Working together, they can do it in:","20days","45/2days","25days", "B" ]
+];
+
+function _(x){
+	return document.getElementById(x);
+}
+canswer=correct;
+
+function renderQuestion(){
+	test = _("test");
+	if(pos >= questions.length){
+		test.innerHTML = "<h2>You got "+correct+" of "+questions.length+" questions correct</h2>";
+		_("test_status").innerHTML = "Test Completed";
+		/*test.innerHTML= "<a class="play-icon popup-with-zoom-anim" href="#large-dialog">Graphs </a>";*/
+		pos = 0;
+		correct = 0;
+		
+		return false;
+	}
+	_("test_status").innerHTML = "Question "+(pos+1)+" of "+questions.length;
+	question = questions[pos][0];
+	chA = questions[pos][1];
+	chB = questions[pos][2];
+	chC = questions[pos][3];
+	test.innerHTML = "<h3>"+question+"</h3>";
+	test.innerHTML += "<input type='radio' name='choices' value='A'> "+chA+"<br>";
+	test.innerHTML += "<input type='radio' name='choices' value='B'> "+chB+"<br>";
+	test.innerHTML += "<input type='radio' name='choices' value='C'> "+chC+"<br><br>";
+	test.innerHTML += "<button onclick='checkAnswer()'>Submit Answer</button>";
+}
+
+
+function checkAnswer(){
+	choices = document.getElementsByName("choices");
+	for(var i=0; i<choices.length; i++){
+		if(choices[i].checked){
+			choice = choices[i].value;
+		}
+	}
+	if(choice == questions[pos][4]){
+		correct++;
+		
+	}
+	
+	if (choice == questions[pos][4])
+	{
+		can.push(1);
+	}
+	else
+	{can.push(0);
+ 		}
+	
+	/*window.alert(can[pos]);	*/
+	pos++;
+	
+	renderQuestion();
+	
+}
+window.addEventListener("load", renderQuestion, false);
+</script>
+
+<!-- sending javascript
+ 
+<script>
+function display(){
+window.alert(can.length);
+window.alert(can[1]);
+window.alert(can[2]);
+window.alert(can[3]);
+}
+</script>
+<button onclick="display()">see variables</button>-->
+
+
+
+</head>
+<body>
+<div class="navigation">
+			<div class="container-fluid">
+				<nav class="pull">
+					<ul>
+						<li><a  href="{% url 'mainaccount.views.index' %}">Home</a></li>
+						<li><a  href="{% url 'mainaccount.views.about' %}">About Us</a></li>
+						<li><a  href="{% url 'mainaccount.views.blog' %}">Blog</a></li>
+						<li><a  href="{% url 'mainaccount.views.terms' %}">Terms</a></li>
+						<li><a  href="{% url 'mainaccount.views.privacy' %}">Privacy</a></li>
+						<li><a  href="{% url 'mainaccount.views.contact' %}">Contact</a></li>
+					</ul>
+				</nav>		
+			</div>
+		</div>
+
+<div class="header">
+	<div class="container">
+		<!--logo-->
+			<div class="logo">
+				<h1><a href="{% url 'mainaccount.views.index' %}">Apti</a><a font color="blue" href="{% url 'mainaccount.views.index' %}">Q</a></h1>
+			</div>
+		<!--//logo-->
+		<div class="top-nav">
+			<ul class="right-icons">
+				<li><span ><i class="glyphicon glyphicon-phone"> </i>+91 011 22568989</span></li>
+				<li><a  href="#"><i class="glyphicon glyphicon-user"> </i>Hi {{user}} </a></li>
+				<li><a  href="{% url 'auth_logout' %}"><i class="glyphicon glyphicon-user"> </i>Logout  </a></li>
+				<!-- <li><a class="play-icon popup-with-zoom-anim" href="#small-dialog"><i class="glyphicon glyphicon-search"> </i> </a></li> -->
+				
+			</ul>
+			<!-- <div class="nav-icon">
+				<div class="hero fa-navicon fa-2x nav_slide_button" id="hero">
+						<a href="#"><i class="glyphicon glyphicon-menu-hamburger"></i> </a>
+					</div>	 -->
+				<!---
+				<a href="#" class="right_bt" id="activator"><i class="glyphicon glyphicon-menu-hamburger"></i>  </a>
+			--->
+			</div>
+		<div class="clearfix"> </div>
+			<!---pop-up-box---->
+			   
+				<link href="/static/css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+				<script src="/static/js/jquery.magnific-popup.js" type="text/javascript"></script>
+			<!---//pop-up-box---->
+				<div id="small-dialog" class="mfp-hide">
+					    <!----- tabs-box ---->
+				<div class="sap_tabs">	
+				     <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+						  <ul class="resp-tabs-list">
+						  	  <li class="resp-tab-item " aria-controls="tab_item-0" role="tab"><span>Google</span></li>
+							  <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Courses</span></li>
+							  <li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>Test Series</span></li>
+							  <div class="clearfix"></div>
+						  </ul>				  	 
+						  <div class="resp-tabs-container">
+						  		<h2 class="resp-accordion resp-tab-active" role="tab" aria-controls="tab_item-0"><span class="resp-arrow"></span>Google</h2><div class="tab-1 resp-tab-content resp-tab-content-active" aria-labelledby="tab_item-0" style="display:block">
+								 	<div class="facts">
+									  	<div class="login">
+											<input type="text" value="Enter a keyword" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter a keyword';}">		
+									 		<input type="submit" value="">
+									 	</div>        
+							        </div>
+						  		</div>
+							     <h2 class="resp-accordion" role="tab" aria-controls="tab_item-1"><span class="resp-arrow"></span>Courses</h2><div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
+									<div class="facts">									
+										<div class="login">
+											<input type="text" value="Enter a keyword" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter a keyword';}">		
+									 		<input type="submit" value="">
+									 	</div> 
+							        </div>	
+								 </div>									
+							      <h2 class="resp-accordion" role="tab" aria-controls="tab_item-2"><span class="resp-arrow"></span>Test Series</h2><div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
+									 <div class="facts">
+										<div class="login">
+											<input type="text" value="Enter a keyword" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter a keyword';}">		
+									 		<input type="submit" value="">
+									 	</div> 
+							         </div>	
+							    </div>
+					      </div>
+					 </div>
+					 <script src="/static/js/easyResponsiveTabs.js" type="text/javascript"></script>
+				    	<script type="text/javascript">
+						    $(document).ready(function () {
+						        $('#horizontalTab').easyResponsiveTabs({
+						            type: 'default', //Types: default, vertical, accordion           
+						            width: 'auto', //auto or any width like 600px
+						            fit: true   // 100% fit in a container
+						        });
+						    });
+			  			 </script>	
+				</div>
+			</div>
+				 <script>
+						$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+						});
+																						
+						});
+				</script>
+					
+	
+		</div>
+		<div class="clearfix"> </div>
+		</div>	
+</div>
+<div class="clock-builder-output"></div>
+<script type="text/javascript" src="/static/js/jquery.min.js"></script>
+<script type="text/javascript" src="/static/js/flipclock.js"></script>
+<style text="text/css">body .flip-clock-wrapper ul li a div div.inn, body .flip-clock-small-wrapper ul li a div div.inn { color: #CCCCCC; background-color: #333333; } body .flip-clock-dot, body .flip-clock-small-wrapper .flip-clock-dot { background: #323434; } body .flip-clock-wrapper .flip-clock-meridium a, body .flip-clock-small-wrapper .flip-clock-meridium a { color: #323434; }</style>
+<script type="text/javascript">
+$(function(){
+	FlipClock.Lang.Custom = { days:'Days', hours:'Hours', minutes:'Minutes', seconds:'Seconds' };
+	var opts = {
+		clockFace: 'HourCounter',
+		countdown: true,
+		language: 'Custom'
+	};
+	opts.classes = {
+		active: 'flip-clock-active',
+		before: 'flip-clock-before',
+		divider: 'flip-clock-divider',
+		dot: 'flip-clock-dot',
+		label: 'flip-clock-label',
+		flip: 'flip',
+		play: 'play',
+		wrapper: 'flip-clock-small-wrapper'
+	};  
+	var countdown = 300; // from: 11/01/2015 11:25 am +0530
+	countdown = Math.max(1, countdown);
+	$('.clock-builder-output').FlipClock(countdown, opts);
+});
+</script>
+<h2 id="test_status"></h2>
+<div id="test"></div>
+
+<script>
+function sendData()
+{
+  // Initialize packed or we get the word 'undefined'
+  var packed = "";
+  for (i = 0; (i < can.length); i++) {
+    if (i > 0) {
+      packed += ",";
+    }
+    packed += escape(can[i]);
+  }
+  window.location = "{% url 'mainaccount.views.graph4beg' %}?" + packed;
+  
+}
+</script>
+<!-- <h1>This is what the array contains:</h1> -->
+<ul>
+<script>
+  for (i = 0; (i < can.length); i++) {
+    document.write("<li>" + can[i] + "</li>\n");
+  }
+</script>
+</ul>
+<a type="button" class="btn btn-lg btn-success" href="javascript:sendData();">bar graph </a>
+
+
+
+<script>
+function sendData2()
+{
+  // Initialize packed or we get the word 'undefined'
+  var packed = "";
+  for (i = 0; (i < can.length); i++) {
+    if (i > 0) {
+      packed += ",";
+    }
+    packed += escape(can[i]);
+  }
+  window.location = "{% url 'mainaccount.views.p3b' %}?" + packed;
+  
+}
+</script>
+<!-- <h1>This is what the array contains:</h1> -->
+<ul>
+<script>
+  for (i = 0; (i < can.length); i++) {
+    document.write("<li>" + can[i] + "</li>\n");
+  }
+</script>
+</ul> <br>
+<a type="button" class="btn btn-lg btn-success" href="javascript:sendData2();">line graph</a>
+</body>
+</html>

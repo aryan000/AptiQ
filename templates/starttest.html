@@ -4,10 +4,16 @@ Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
 License URL: http://creativecommons.org/licenses/by/3.0/
 -->
+  <!--A Design by W3layouts 
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
 <!DOCTYPE html>
 <html>
 <head>
-<title>APtiQ:your guide to aptitude quotient | Suggestion </title>
+<title>APtiQ:your guide to aptitude quotient| Register :: w3layouts</title>
 <link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="/static/js/jquery.min.js"></script>
@@ -21,7 +27,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!--//theme-style-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="Real Home Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+<meta name="keywords" content="Real Home  Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 </head>
@@ -52,14 +58,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="top-nav">
 			<ul class="right-icons">
 				<li><span ><i class="glyphicon glyphicon-phone"> </i>+91 011 22568989</span></li>
-				<li><a  href="main_login.php"><i class="glyphicon glyphicon-user"> </i>Login</a></li>
-				<li><a class="play-icon popup-with-zoom-anim" href="#small-dialog"><i class="glyphicon glyphicon-search"> </i> </a></li>
+				<li><a  href="#"><i class="glyphicon glyphicon-user"> </i>Hi {{user}} </a></li>
+				<li><a  href="{% url 'auth_logout' %}"><i class="glyphicon glyphicon-user"> </i>Logout  </a></li>
+				<!-- <li><a class="play-icon popup-with-zoom-anim" href="#small-dialog"><i class="glyphicon glyphicon-search"> </i> </a></li> -->
 				
 			</ul>
-			<div class="nav-icon">
+			<!-- <div class="nav-icon">
 				<div class="hero fa-navicon fa-2x nav_slide_button" id="hero">
 						<a href="#"><i class="glyphicon glyphicon-menu-hamburger"></i> </a>
-					</div>	
+					</div>	 -->
 				<!---
 				<a href="#" class="right_bt" id="activator"><i class="glyphicon glyphicon-menu-hamburger"></i>  </a>
 			--->
@@ -144,22 +151,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--//-->	
 <div class=" banner-buying">
 	<div class=" container">
-	<h3><span>Suggest</span>ion</h3> 
+	<h3><!-- <span>Regis</span>ter --></h3> 
 	<!---->
 	<div class="menu-right">
-		<!--  <ul class="menu">
-			<li class="item1"><a href="#"> Menu<i class="glyphicon glyphicon-menu-down"> </i> </a>
-			<ul class="cute">
-				<li class="subitem1"><a href="{% url 'mainaccount.views.buy' %}">Buy </a></li>
-				<li class="subitem2"><a href="{% url 'mainaccount.views.buy' %}">Rent </a></li>
-				<li class="subitem3"><a href="{% url 'mainaccount.views.buy' %}">Hostels </a></li>
-				<li class="subitem1"><a href="{% url 'mainaccount.views.buy' %}">Resale </a></li>
-				<li class="subitem2"><a href="{% url 'mainaccount.views.loan' %}">Home Loan</a></li>
-				<li class="subitem3"><a href="{% url 'mainaccount.views.buy' %}">Apartment </a></li>
-				<li class="subitem3"><a href="{% url 'mainaccount.views.dealers' %}">Dealers</a></li>
-			</ul>
-		</li>
-		</ul> -->
+		 
 	</div>
 	<div class="clearfix"> </div>
 		<!--initiate accordion-->
@@ -186,95 +181,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 </div>
 <!--//header-->
-<!--contact-->
-<div class="feedback">
-	<div class="container">
-		<h3>Make a Suggestion</h3>
-		<div class="feedback-top">
-			<form>
-				<input type="text"  placeholder="Name"  required="">
-				<input type="text"  placeholder="Email "  required="">
-				<input type="text"  placeholder="Phone Number " required="" >
-				<input type="text"  placeholder="Subject " required="" >
-				<textarea  placeholder="Suggestion" requried=""></textarea>
-				 <label class="hvr-sweep-to-right">
-	           	<input type="submit" value="Submit">
-	           </label>
-			</form>
-		</div>
-	</div>
-</div>
-<!--//contact-->
-<!--footer-->
-<div class="footer">
-	<div class="container">
-		<div class="footer-top-at">
-			<div class="col-md-3 amet-sed">
-				<h4>Our Company</h4>
-				<ul class="nav-bottom">
-					<li><a href="{% url 'mainaccount.views.about'%}">About Us</a></li>
-					<!--<li><a href="blog.html"> Blog</a></li>-->
-					<li><a href="{% url 'mainaccount.views.mobile_app'%}">Mobile</a></li>
-					<li><a href="{% url 'mainaccount.views.terms'%}">Terms & Conditions</a></li>
-					<li><a href="{% url 'mainaccount.views.privacy'%}">Privacy Policy</a></li>	
-					<li><a href="{% url 'mainaccount.views.blog'%}">Blog</a></li>
-					
-				</ul>	
-			</div>
-			<div class="col-md-3 amet-sed ">
-				<h4>Work With Us</h4>
-					<ul class="nav-bottom">
-						<!--<li><a href="single.html">Real Estate Brokers</a></li>-->
-						<li><a href="{% url 'mainaccount.views.single' %}">Business Development</a></li>
-						<li><a href="{% url 'mainaccount.views.single' %}">Affiliate Programs</a></li>
-						<li><a href="{% url 'mainaccount.views.contact' %}">Sitemap</a></li>
-						<li><a href="{% url 'mainaccount.views.career' %}">Careers</a></li>
-						<li><a href="{% url 'mainaccount.views.feedback' %}">Feedback</a></li>	
-					</ul>	
-			</div>
-			<div class="col-md-3 amet-sed">
-				<h4>Customer Support</h4>
-				<p>Mon-Fri, 7AM-7PM </p>
-				<p>Sat-Sun, 8AM-5PM </p>
-				<p>177-869-6559</p>
-					<ul class="nav-bottom">
-						<li><a href="#">Live Chat</a></li>
-						<li><a href="{% url 'mainaccount.views.faqs' %}">Frequently Asked Questions</a></li>
-						<li><a href="{% url 'mainaccount.views.suggestion' %}">Make a Suggestion</a></li>
-					</ul>	
-			</div>
-			<div class="col-md-3 amet-sed ">
-				<!--<h4>Property Services</h4>
-				   <ul class="nav-bottom">
-						<li><a href="single.html">Residential Property</a></li>
-						<li><a href="single.html">Commercial Property</a></li>
-						<li><a href="login.html">Login</a></li>
-						<li><a href="register.html">Register</a></li>
-						<li><a href="typo.html">Short Codes</a></li>	
-					</ul>	
-					<ul class="social">
-						<li><a href="#"><i> </i></a></li>
-						<li><a href="#"><i class="gmail"> </i></a></li>
-						<li><a href="#"><i class="twitter"> </i></a></li>
-						<li><a href="#"><i class="camera"> </i></a></li>
-						<li><a href="#"><i class="dribble"> </i></a></li>
-					</ul>-->
-			</div>
-		<div class="clearfix"> </div>
-		</div>
-	</div>
-	<div class="footer-bottom">
-		<div class="container">
-			<div class="col-md-4 footer-logo">
-				<h2><a href="{% url 'mainaccount.views.index' %}">Apti -Q</a></h2>
-			</div>
-			<div class="col-md-8 footer-class">
-				<p >© 2015 AptiQ. All Rights Reserved | Design by  <a href="{% url 'mainaccount.views.buy' %}" target="_blank">DTU guys</a> </p>
-			</div>
-		<div class="clearfix"> </div>
-	 	</div>
-	</div>
-</div>
-<!--//footer-->
+
+ <br> <br>
+		&nbsp &nbsp <h3> Rules & Regulation </h3><br><br>
+ 
+<h4> 1. You are at the first level of this test</h4><br>
+<h4> 2. Dont quit in between</h4><br>
+<h4> 3. This section contains 5 MCQ question</h4><br>
+<h4> 4. Time alloted to each question is 1 minute</h4><br>
+<h4> 5. You have 5 minutes in total to solve this Section</h4><br>
+<h4> 6. For level up and moving to next section you sould atleast solve 3 questions correctly</h4><br>
+<h4> 7. Test your ability and make your self confident</h4><br>
+<h4>ALL THE BEST!!!!</h4><br>
+<form >
+<center>
+<!-- <button href="index.html" type="button" class="btn btn-lg btn-success">Start Test</button> -->
+<a href="{% url 'mainaccount.views.leveltest' %}" type="button" class="btn btn-lg btn-success">Start Test </a>
+ <br> <br> <br>
+</center>
+</form>
 </body>
 </html>

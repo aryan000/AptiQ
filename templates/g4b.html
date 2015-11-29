@@ -1,0 +1,325 @@
+<!--A Design by W3layouts 
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>APtiQ:your guide to aptitude quotient</title>
+<link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="/static/js/jquery.min.js"></script>
+<script src="/static/js/jquery.magnific-popup.js"></script>
+<script src="/static/js/Chart.js"></script>
+  </head>
+<!-- Custom Theme files -->
+<!--menu-->
+<script src="/static/js/scripts.js"></script>
+<link href="/static/css/styles.css" rel="stylesheet">
+<!--//menu-->
+<!--theme-style-->
+<link href="/static/css/style.css" rel="stylesheet" type="text/css" media="all" />  
+<!--//theme-style-->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Real Home Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- slide -->
+<script src="js/responsiveslides.min.js"></script>
+   <script>
+    $(function () {
+      $("#slider").responsiveSlides({
+        auto: true,
+        speed: 500,
+        namespace: "callbacks",
+        pager: true,
+      });
+    });
+  </script>
+	<script src="C:/Users/daisyanu/Desktop/5 sem/Web tech/web 3.0/Chart.js-master/Chart.js-master/Chart.js"></script>
+</head>
+<body onload='hideBoth()'><!-- // -->
+<div class="navigation">
+      <div class="container-fluid">
+        <nav class="pull">
+          <ul>
+            <li><a  href="{% url 'mainaccount.views.index' %}">Home</a></li>
+            <li><a  href="{% url 'mainaccount.views.about' %}">About Us</a></li>
+            <li><a  href="{% url 'mainaccount.views.blog' %}">Blog</a></li>
+            <li><a  href="{% url 'mainaccount.views.terms' %}">Terms</a></li>
+            <li><a  href="{% url 'mainaccount.views.privacy' %}">Privacy</a></li>
+            <li><a  href="{% url 'mainaccount.views.contact' %}">Contact</a></li>
+          </ul>
+        </nav>       
+      </div>
+    </div>
+
+<div class="header">
+  <div class="container">
+    <!--logo-->
+      <div class="logo">
+        <h1><a href="{% url 'mainaccount.views.index' %}">Apti</a><a font color="blue" href="{% url 'mainaccount.views.index' %}">Q</a></h1>
+      </div>
+    <!--//logo-->
+    <div class="top-nav">
+      <ul class="right-icons">
+        <li><span ><i class="glyphicon glyphicon-phone"> </i>+91 011 22568989</span></li>
+        <li><a  href="#"><i class="glyphicon glyphicon-user"> </i>Hi {{user}} </a></li>
+        <li><a  href="{% url 'auth_logout' %}"><i class="glyphicon glyphicon-user"> </i>Logout  </a></li>
+        <!-- <li><a class="play-icon popup-with-zoom-anim" href="#small-dialog"><i class="glyphicon glyphicon-search"> </i> </a></li> -->
+        
+      </ul>
+      <div class="nav-icon">
+        <!-- <div class="hero fa-navicon fa-2x nav_slide_button" id="hero">
+            <a href="#"><i class="glyphicon glyphicon-menu-hamburger"></i> </a>
+          </div>   -->
+        <!---
+        <a href="#" class="right_bt" id="activator"><i class="glyphicon glyphicon-menu-hamburger"></i>  </a>
+      --->
+      </div>
+    <div class="clearfix"> </div>
+      <!---pop-up-box---->
+         
+        <link href="/static/css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+        <script src="/static/js/jquery.magnific-popup.js" type="text/javascript"></script>
+      <!---//pop-up-box---->
+        <div id="small-dialog" class="mfp-hide">
+              <!----- tabs-box ---->
+        <div class="sap_tabs">  
+             <div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
+              <ul class="resp-tabs-list">
+                  <li class="resp-tab-item " aria-controls="tab_item-0" role="tab"><span>Google</span></li>
+                <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Courses</span></li>
+                <li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>Test Series</span></li>
+                <div class="clearfix"></div>
+              </ul>            
+              <div class="resp-tabs-container">
+                  <h2 class="resp-accordion resp-tab-active" role="tab" aria-controls="tab_item-0"><span class="resp-arrow"></span>Google</h2><div class="tab-1 resp-tab-content resp-tab-content-active" aria-labelledby="tab_item-0" style="display:block">
+                  <div class="facts">
+                      <div class="login">
+                      <input type="text" value="Enter a keyword" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter a keyword';}">   
+                      <input type="submit" value="">
+                    </div>        
+                      </div>
+                  </div>
+                   <h2 class="resp-accordion" role="tab" aria-controls="tab_item-1"><span class="resp-arrow"></span>Courses</h2><div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
+                  <div class="facts">                 
+                    <div class="login">
+                      <input type="text" value="Enter a keyword" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter a keyword';}">   
+                      <input type="submit" value="">
+                    </div> 
+                      </div>  
+                 </div>                 
+                    <h2 class="resp-accordion" role="tab" aria-controls="tab_item-2"><span class="resp-arrow"></span>Test Series</h2><div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
+                   <div class="facts">
+                    <div class="login">
+                      <input type="text" value="Enter a keyword" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter a keyword';}">   
+                      <input type="submit" value="">
+                    </div> 
+                       </div> 
+                  </div>
+                </div>
+           </div>
+           <script src="/static/js/easyResponsiveTabs.js" type="text/javascript"></script>
+              <script type="text/javascript">
+                $(document).ready(function () {
+                    $('#horizontalTab').easyResponsiveTabs({
+                        type: 'default', //Types: default, vertical, accordion           
+                        width: 'auto', //auto or any width like 600px
+                        fit: true   // 100% fit in a container
+                    });
+                });
+               </script>  
+        </div>
+        </div>
+         <script>
+            $(document).ready(function() {
+            $('.popup-with-zoom-anim').magnificPopup({
+              type: 'inline',
+              fixedContentPos: false,
+              fixedBgPos: true,
+              overflowY: 'auto',
+              closeBtnInside: true,
+              preloader: false,
+              midClick: true,
+              removalDelay: 300,
+              mainClass: 'my-mfp-zoom-in'
+            });
+                                            
+            });
+        </script>
+          
+  
+        </div>
+    <div class="clearfix"> </div>
+  </div>  
+  </div>  
+
+
+<script>
+  var query = window.location.search;
+  // Skip the leading ?, which should always be there, 
+  // but be careful anyway
+  if (query.substring(0, 1) == '?') {
+    query = query.substring(1);
+  }
+  var can = query.split(','); 
+  for (i = 0; (i < can.length); i++) {
+    can[i] = unescape(can[i]);
+  }
+</script>
+<div style="width:50%" align="center"><h1> QUESTION WISE ANALYSIS</h1>
+<ul type="square">
+<script>
+var i;
+  for (i = 0; (i < can.length); i++) {
+    document.write("<li>" + can[i] + "</li>\n");
+  }
+</script>
+</ul>
+</div>
+
+<div style="width: 50%" align="right">
+      <canvas id="canvas" height="100" width="400">Graph</canvas>
+    </div>
+
+
+  <script>
+  var ra = function(i){ return can[i]};
+   
+    // for (i = 0; (i < can.length); i++) {
+    // document.write("helo"+ can[i] + "\n");
+  
+  var barChartData = {
+    labels : ["q1","q2","q3","q4"],
+    datasets : [
+      {
+        fillColor : "rgba(220,220,220,0.5)",
+        strokeColor : "rgba(220,220,220,0.8)",
+        highlightFill: "rgba(220,220,220,0.75)",
+        highlightStroke: "rgba(220,220,220,1)",
+        data : [ra(0),ra(1),ra(2),ra(3)]
+      },
+      {
+        fillColor : "rgba(151,187,205,0.5)",
+        strokeColor : "rgba(151,187,205,0.8)",
+        highlightFill : "rgba(151,187,205,0.75)",
+        highlightStroke : "rgba(151,187,205,1)",
+        data : [ra(0),ra(1),ra(2),ra(3)] 
+         }
+    ]
+
+  }
+  window.onload = function(){
+    var ctx = document.getElementById("canvas").getContext("2d");
+    window.myBar = new Chart(ctx).Bar(barChartData, {
+      responsive : true
+    });
+  }
+
+  </script>
+  <script type="text/javascript" language= "javascript">
+  var i,count =0;
+  function hideBoth()  
+{  window.alert(hello);
+   /*document.getElementById("cont1").style.display="block";  
+   document.getElementById("cont2").style.display="block" ; */ 
+    document.getElementById("cont1").style.visibility="hidden";  
+   document.getElementById("cont2").style.visibility="hidden" ;  
+}
+  function sumc(){
+  var i;
+  for (i = 0; (i < can.length); i++){
+   if (can[i]==1)
+      {count++;}
+   }
+   //window.alert(count);
+if (count > 1)
+   {//document.getElementById("cont1").style.display="none";
+ document.getElementById("cont2").style.visibility="hidden";
+ document.getElementById("cont1").style.visibility="visible";
+/*document.write("<div id="cont1" class="alert alert-success" role="alert">
+         <strong>Well done!</strong> You successfully qualified for next level.
+       <a href="leveltest2.html" type="button" class="btn btn-lg btn-success">Next Level </a>
+       </div>")}
+document.write("<a href="leveltest2.html">You successfully qualified for next level./a>")*/;
+}
+
+  else {
+document.getElementById("cont1").style.visibility="hidden";
+document.getElementById("cont2").style.visibility="visible";
+/*document.write("<div id="cont2" class="alert alert-danger" role="alert">
+        <strong>Oh snap!</strong> U didn't qualify for next level.Try again!
+        <a href="leveltest.html" type="button" class="btn btn-lg btn-success">Try again </a>
+</div>")
+/*document.write("<a href="leveltest.html">U didn't qualify for next level.Try again!</a>");
+}*/
+}
+}
+
+</script>
+<!-- <div style="width: 50%" align="right">
+      <canvas id="canvas2" height="200" width="800">Line Graph</canvas>
+    </div>
+ -->
+
+
+<!-- <div style="width:30%">
+      <div>
+        <canvas id="canvas2" height="450" width="600"></canvas>
+      </div>
+    </div> 
+<a href="#" onclick="sumc();">Get result</a>-->
+<button type="button" class="btn btn-lg btn-primary" onclick="sumc()" >Get Result </button>
+
+      <div id="cont1" class="alert alert-success" role="alert" visibility="hidden">
+        <strong>Well done!</strong> You successfully qualified for next level.
+      <a href="{% url 'mainaccount.views.leveltest2' %}" type="button" class="btn btn-lg btn-success">Next Level </a>
+      </div>
+     <div id="cont2" class="alert alert-danger" role="alert" visibility="hidden">
+        <strong>Oh snap!</strong> U didn't qualify for next level.Try again!
+        <a href="{% url 'mainaccount.views.leveltest' %}" type="button" class="btn btn-lg btn-success">Try again </a>
+     </div>
+  <script>
+  /*  var ra = function(i){ return can[i]};
+    var lineChartData = {
+      labels : ["q1","q2","q3","q4"],
+      datasets : [
+        {
+          label: "My First dataset",
+          fillColor : "rgba(220,220,220,0.2)",
+          strokeColor : "rgba(220,220,220,1)",
+          pointColor : "rgba(220,220,220,1)",
+          pointStrokeColor : "#fff",
+          pointHighlightFill : "#fff",
+          pointHighlightStroke : "rgba(220,220,220,1)",
+          data : [ra(0),ra(1),ra(2),ra(3)]
+        },
+        {
+          label: "My Second dataset",
+          fillColor : "rgba(151,187,205,0.2)",
+          strokeColor : "rgba(151,187,205,1)",
+          pointColor : "rgba(151,187,205,1)",
+          pointStrokeColor : "#fff",
+          pointHighlightFill : "#fff",
+          pointHighlightStroke : "rgba(151,187,205,1)",
+          data : [ra(0),ra(1),ra(2),ra(3)]
+        }
+      ]
+
+    }
+
+  window.onload = function(){
+    var ctx = document.getElementById("canvas2").getContext("2d");
+    window.myLine = new Chart(ctx).Line(lineChartData, {
+      responsive: true
+    });
+  }*/
+</script>
+
+
+</body>
+</html>
