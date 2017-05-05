@@ -30,12 +30,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="container-fluid">
 				<nav class="pull">
 					<ul>
-						<li><a  href="{% url 'mainaccount.views.index' %} ">Home</a></li>
-						<li><a  href="{% url 'mainaccount.views.about' %} ">About Us</a></li>
-						<li><a  href="{% url 'mainaccount.views.blog' %} ">Blog</a></li>
-						<li><a  href="{% url 'mainaccount.views.terms' %}">Terms</a></li>
-						<li><a  href="{% url 'mainaccount.views.privacy' %}">Privacy</a></li>
-						<li><a  href="{% url 'mainaccount.views.contact' %}">Contact</a></li>
+						<li><a  href="{% url 'index' %} ">Home</a></li>
+						<li><a  href="{% url 'about' %} ">About Us</a></li>
+						<li><a  href="{% url 'blog' %} ">Blog</a></li>
+						<li><a  href="{% url 'terms' %}">Terms</a></li>
+						<li><a  href="{% url 'privacy' %}">Privacy</a></li>
+						<li><a  href="{% url 'contact' %}">Contact</a></li>
 					</ul>
 				</nav>			
 			</div>
@@ -45,7 +45,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="container">
 		<!--logo-->
 			<div class="logo">
-				<h1><a href="{% url 'mainaccount.views.index' %}">AptiQ</a></h1>
+				<h1><a href="{% url 'index' %}">AptiQ</a></h1>
 			</div>
 		<!--//logo-->
 		<div class="top-nav">
@@ -149,13 +149,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<!--  <ul class="menu">
 			<li class="item1"><a href="#"> Menu<i class="glyphicon glyphicon-menu-down"> </i> </a>
 			<ul class="cute">
-				<li class="subitem1"><a href="{% url 'mainaccount.views.buy' %}">Buy </a></li>
-				<li class="subitem2"><a href="{% url 'mainaccount.views.buy' %}">Rent </a></li>
-				<li class="subitem3"><a href="{% url 'mainaccount.views.buy' %}">Hostels </a></li>
-				<li class="subitem1"><a href="{% url 'mainaccount.views.buy' %}">Resale </a></li>
-				<li class="subitem2"><a href="{% url 'mainaccount.views.home' %}">Home Loan</a></li>
-				<li class="subitem3"><a href="{% url 'mainaccount.views.buy' %}">Apartment </a></li>
-				<li class="subitem3"><a href="{% url 'mainaccount.views.dealers' %}">Dealers</a></li>
+				<li class="subitem1"><a href="{% url 'buy' %}">Buy </a></li>
+				<li class="subitem2"><a href="{% url 'buy' %}">Rent </a></li>
+				<li class="subitem3"><a href="{% url 'buy' %}">Hostels </a></li>
+				<li class="subitem1"><a href="{% url 'buy' %}">Resale </a></li>
+				<li class="subitem2"><a href="{% url 'buy' %}">Home Loan</a></li>
+				<li class="subitem3"><a href="{% url 'buy' %}">Apartment </a></li>
+				<li class="subitem3"><a href="{% url 'dealers' %}">Dealers</a></li>
 			</ul> -->
 		</li>
 		</ul>
@@ -191,9 +191,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<h3>Blog</h3>
    <div class="col-md-9 blog-head">
 	     <div class="blog-top">
-	         <a href="{% url 'mainaccount.views.blog_single' %}"><img src="/static/images/bl.jpg" class="img-responsive" alt=""/></a>
-	         <h4><a href="{% url 'mainaccount.views.blog_single' %}">Blog Heading Here</a></h4>
-	         <h5>Posted By : <a href="{% url 'mainaccount.views.blog_single' %}">Elon Musk</a> | Date : 03-03-2015</h5>
+	         <a href="{% url 'blog_single' %}"><img src="/static/images/bl.jpg" class="img-responsive" alt=""/></a>
+	         <h4><a href="{% url 'blog_single' %}">Blog Heading Here</a></h4>
+	         <h5>Posted By : <a href="{% url 'blog_single' %}">Elon Musk</a> | Date : 03-03-2015</h5>
 	        <p>If all humans have the same brain capacity—about 300 million pattern recognizers in our cortices—then what made Albert Einstein special? In his quest to replicate the human brain, renowned AI engineer Ray Kurzweil finds that a big part is: The courage to stick to your convictions. The average human is inherently conventional, reluctant to pursue ideas outside of the norm.
 
 “[Courage] is in the neocortex, and people who fill up too much of their neocortex with concern about the approval of their peers are probably not going be the next Einstein or Steve Jobs.” – Ray Kurzweil told Wired.
@@ -205,7 +205,7 @@ For over 70 years, AI scientists have been periodically disillusioned by shortfa
 Hollywood historically perpetuates the mythical dark depictions of man-versus-machine, but AI is turning out to be nothing like what we imagined. Intelligent machines are not armies of robots. Instead, statistical learning models, inspired by biological neural networks, allow us to silently, but magically teach machines how to learn.
 
 With the convergence of cheaper computing, faster algorithms and ample data, artificial neural networks are resurging–and this time it’s different. Today AI professionals are among the most coveted talent, moving out of university research and into R&D labs of cutting-edge commercial companies. The application of AI, particularly in pattern recognition and image processing, is beginning to permeate daily life and will build our future. There’s a long way to go–these technologies are in their infancies. But Kurzweil and several other pioneers are certain that a future in which computers rivaling human intelligence is just a decade and a half away. AI will be the future electricity, powering everyday life: </p>
-	         <a class="hvr-sweep-to-right more" href="{% url 'mainaccount.views.blog_single' %}">Read More</a>
+	         <a class="hvr-sweep-to-right more" href="{% url 'blog_single' %}">Read More</a>
 	           <div class="links">
 		  		  <ul class="blog-links">
 		  			<li><a href="#"><i class="blog_circle">24 </i><span>Comments</span></a></li>
@@ -214,9 +214,9 @@ With the convergence of cheaper computing, faster algorithms and ample data, art
 		  	   </div>
 		 </div>  
 		  <div class="blog-top">
-	         <a href="{% url 'mainaccount.views.blog_single' %}"><img src="/static/images/bl1.jpg" class="img-responsive" alt=""/></a>
-	        <h4><a href="{% url 'mainaccount.views.blog_single' %}">Blog Heading Here</a></h4>
-	         <h5>Posted By : <a href="{% url 'mainaccount.views.blog_single' %} ">The Dark Side of Recruiting Pre-Internet</a> | Date : 03-03-2015</h5>
+	         <a href="{% url 'blog_single' %}"><img src="/static/images/bl1.jpg" class="img-responsive" alt=""/></a>
+	        <h4><a href="{% url 'blog_single' %}">Blog Heading Here</a></h4>
+	         <h5>Posted By : <a href="{% url 'blog_single' %} ">The Dark Side of Recruiting Pre-Internet</a> | Date : 03-03-2015</h5>
 	        <p>Before boolean search strings could magically populate screens with names, you could only flip through stacks of Yellow Pages. Before the Cloud neatly organized the bulk of the professional population, there was only the Rolodex. Have you ever stopped to think, what would recruiting be without the Internet? 
 
 It was a darker time.
@@ -226,7 +226,7 @@ Without instant access to databases, recruiters were left with their quick wit t
 You had to painstakingly fill thousands of index cards in your prized Rolodex and keep carbon copies as a backup. You had to burn the midnight oil every single week to create costly advertisements, sensational kiosks and clever mobile billboards. Drowning in a sea of thick, glossy resumes, you were blind to candidates’ true skills and personality. After lengthy interviewing, your reputation depended on the success of your candidates. Referrals were everything.
 
 It’s bizarre to think what recruiters had to go through back in the day to successfully build strong teams. Some devised clever ruses for a short-term fix. But even with the advent of the Internet, recruiters with enough grit to survive the school of hard knocks still make the best recruiters today. </p>
-	         <a class="hvr-sweep-to-right more" href="{% url 'mainaccount.views.blog_single' %}">Read More</a>
+	         <a class="hvr-sweep-to-right more" href="{% url 'blog_single' %}">Read More</a>
 	           <div class="links">
 		  		  <ul class="blog-links">
 		  			<li><a href="#"><i class="blog_circle">24 </i><span>Comments</span></a></li>
@@ -235,9 +235,9 @@ It’s bizarre to think what recruiters had to go through back in the day to suc
 		  	   </div>
 		 </div>  
 		  <div class="blog-top">
-	         <a href="{% url 'mainaccount.views.blog_single' %}"><img src="/static/images/bl2.jpg" class="img-responsive" alt=""/></a>
-	          <h4><a href="{% url 'mainaccount.views.blog_single' %}">Blog Heading Here</a></h4>
-	         <h5>Posted By : <a href="{% url 'mainaccount.views.blog_single' %}">The Westech Career Fair</a> | Date : 03-03-2015</h5>
+	         <a href="{% url 'blog_single' %}"><img src="/static/images/bl2.jpg" class="img-responsive" alt=""/></a>
+	          <h4><a href="{% url 'blog_single' %}">Blog Heading Here</a></h4>
+	         <h5>Posted By : <a href="{% url 'blog_single' %}">The Westech Career Fair</a> | Date : 03-03-2015</h5>
 	        <p>Those of you who recruited in Silicon Valley in the ‘80s and ‘90s probably remember frequenting Westech, a career fair that housed over 500 up-and-coming tech companies, like Sun Microsystems and Cisco (often confused with the Sysco food brand at the time). These career fairs were the equivalent to phone screenings today, but with an exhausting line of candidates. This yielded in boxes of resumes piled 12-inches high. 
 
 University recruiting was also a huge battlefield for talent. To beat competitors, executives would personally offer “a check of $10,000 if the student would sign the contract on the spot!” says David Cohen, president of human resources consultancy. 
@@ -245,7 +245,7 @@ University recruiting was also a huge battlefield for talent. To beat competitor
 In any case, these career fairs were pretty infrequent–maybe once a quarter max. And Patricia Schultz, director of HR at Associated Banc-Corp had a good point: The best candidates, who probably aren’t seeking a job, don’t really have time to attend career fairs. While career fairs like Westech were a decent way to walk away with a fistful of candidates, you’d still be missing out on the bulk of the best people: The passive candidates.
 
 So, if newspaper ads and career fairs weren’t ideal, what did that leave old school recruiters with? </p>
-	         <a class="hvr-sweep-to-right more" href="{% url 'mainaccount.views.blog_single' %}">Read More</a>
+	         <a class="hvr-sweep-to-right more" href="{% url 'blog_single' %}">Read More</a>
 	           <div class="links">
 		  		  <ul class="blog-links">
 		  			<li><a href="#"><i class="blog_circle">24 </i><span>Comments</span></a></li>
@@ -291,7 +291,7 @@ So, if newspaper ads and career fairs weren’t ideal, what did that leave old s
 	     	<h4>Popular Posts</h4>
 			<div class="blog-list-top">
 				<div class="blog-img">
-					<a href="{% url 'mainaccount.views.blog_single' %}"><img class="img-responsive" src="/static/images/bo.jpg" alt=""></a>
+					<a href="{% url 'blog_single' %}"><img class="img-responsive" src="/static/images/bo.jpg" alt=""></a>
 				</div>
 				<div class="blog-text">
 					<p ><a href="#">Lorem ipsum dolor sit amet, consectetuer</a></p>
@@ -306,10 +306,10 @@ So, if newspaper ads and career fairs weren’t ideal, what did that leave old s
 			</div>
 			<div class="blog-list-top">
 				<div class="blog-img">
-					<a href="{% url 'mainaccount.views.blog_single' %}"><img class="img-responsive" src="/static/images/bo1.jpg" alt=""></a>
+					<a href="{% url 'blog_single' %}"><img class="img-responsive" src="/static/images/bo1.jpg" alt=""></a>
 				</div>
 				<div class="blog-text">
-					<p ><a href="{% url 'mainaccount.views.blog_single' %}">Lorem ipsum dolor sit amet, consectetuer</a></p>
+					<p ><a href="{% url 'blog_single' %}">Lorem ipsum dolor sit amet, consectetuer</a></p>
 					<span class="link">
 						Feb 14, 2015
 						<a href="#">
@@ -321,10 +321,10 @@ So, if newspaper ads and career fairs weren’t ideal, what did that leave old s
 			</div>
 			<div class="blog-list-top">
 				<div class="blog-img">
-					<a href="{% url 'mainaccount.views.blog_single' %}"><img class="img-responsive" src="/static/images/bo2.jpg" alt=""></a>
+					<a href="{% url 'blog_single' %}"><img class="img-responsive" src="/static/images/bo2.jpg" alt=""></a>
 				</div>
 				<div class="blog-text">
-					<p ><a href="{% url 'mainaccount.views.blog_single' %}">Lorem ipsum dolor sit amet, consectetuer</a></p>
+					<p ><a href="{% url 'blog_single' %}">Lorem ipsum dolor sit amet, consectetuer</a></p>
 					<span class="link">
 						Feb 14, 2015
 						<a href="#">
@@ -336,10 +336,10 @@ So, if newspaper ads and career fairs weren’t ideal, what did that leave old s
 			</div>
 			<div class="blog-list-top">
 				<div class="blog-img">
-					<a href="{% url 'mainaccount.views.blog_single' %}"><img class="img-responsive" src="/static/images/bo3.jpg" alt=""></a>
+					<a href="{% url 'blog_single' %}"><img class="img-responsive" src="/static/images/bo3.jpg" alt=""></a>
 				</div>
 				<div class="blog-text">
-					<p ><a href="{% url 'mainaccount.views.blog_single' %}">Lorem ipsum dolor sit amet, consectetuer</a></p>
+					<p ><a href="{% url 'blog_single' %}">Lorem ipsum dolor sit amet, consectetuer</a></p>
 					<span class="link">
 						Dec 14, 2013
 						<a href="#">
@@ -351,10 +351,10 @@ So, if newspaper ads and career fairs weren’t ideal, what did that leave old s
 			</div>
 			<div class="blog-list-top">
 				<div class="blog-img">
-					<a href="{% url 'mainaccount.views.blog_single' %}"><img class="img-responsive" src="/static/images/bo4.jpg" alt=""></a>
+					<a href="{% url 'blog_single' %}"><img class="img-responsive" src="/static/images/bo4.jpg" alt=""></a>
 				</div>
 				<div class="blog-text">
-					<p ><a href="{% url 'mainaccount.views.blog_single' %}">Lorem ipsum dolor sit amet, consectetuer</a></p>
+					<p ><a href="{% url 'blog_single' %}">Lorem ipsum dolor sit amet, consectetuer</a></p>
 					<span class="link">
 						Dec 14, 2013
 						<a href="#">
@@ -404,12 +404,12 @@ So, if newspaper ads and career fairs weren’t ideal, what did that leave old s
 			<div class="col-md-3 amet-sed">
 				<h4>Our Company</h4>
 				<ul class="nav-bottom">
-					<li><a href="{% url 'mainaccount.views.about'%}">About Us</a></li>
+					<li><a href="{% url 'about'%}">About Us</a></li>
 					<!--<li><a href="blog.html"> Blog</a></li>-->
-					<li><a href="{% url 'mainaccount.views.mobile_app'%}">Mobile</a></li>
-					<li><a href="{% url 'mainaccount.views.terms'%}">Terms & Conditions</a></li>
-					<li><a href="{% url 'mainaccount.views.privacy'%}">Privacy Policy</a></li>	
-					<li><a href="{% url 'mainaccount.views.blog'%}">Blog</a></li>
+					<li><a href="{% url 'mobile_app'%}">Mobile</a></li>
+					<li><a href="{% url 'terms'%}">Terms & Conditions</a></li>
+					<li><a href="{% url 'privacy'%}">Privacy Policy</a></li>	
+					<li><a href="{% url 'blog'%}">Blog</a></li>
 					
 					
 				</ul>	
@@ -419,11 +419,11 @@ So, if newspaper ads and career fairs weren’t ideal, what did that leave old s
 					<ul class="nav-bottom">
 						
 						<!--<li><a href="single.html">Real Estate Brokers</a></li>-->
-						<li><a href="{% url 'mainaccount.views.single' %}">Business Development</a></li>
-						<li><a href="{% url 'mainaccount.views.single' %}">Affiliate Programs</a></li>
-						<li><a href="{% url 'mainaccount.views.contact' %}">Sitemap</a></li>
-						<li><a href="{% url 'mainaccount.views.career' %}">Careers</a></li>
-						<li><a href="{% url 'mainaccount.views.feedback' %}">Feedback</a></li>	
+						<li><a href="{% url 'single' %}">Business Development</a></li>
+						<li><a href="{% url 'single' %}">Affiliate Programs</a></li>
+						<li><a href="{% url 'contact' %}">Sitemap</a></li>
+						<li><a href="{% url 'career' %}">Careers</a></li>
+						<li><a href="{% url 'feedback' %}">Feedback</a></li>	
 					</ul>	
 			</div>
 			<div class="col-md-3 amet-sed">
@@ -433,8 +433,8 @@ So, if newspaper ads and career fairs weren’t ideal, what did that leave old s
 				<p>177-869-6559</p>
 					<ul class="nav-bottom">
 						<li><a href="#">Live Chat</a></li>
-						<li><a href="{% url 'mainaccount.views.faqs' %}">Frequently Asked Questions</a></li>
-						<li><a href="{% url 'mainaccount.views.suggestion' %}">Make a Suggestion</a></li>
+						<li><a href="{% url 'faqs' %}">Frequently Asked Questions</a></li>
+						<li><a href="{% url 'suggestion' %}">Make a Suggestion</a></li>
 					</ul>	
 			</div>
 			<div class="col-md-3 amet-sed ">
@@ -460,10 +460,10 @@ So, if newspaper ads and career fairs weren’t ideal, what did that leave old s
 	<div class="footer-bottom">
 		<div class="container">
 			<div class="col-md-4 footer-logo">
-				<h2><a href="{% url 'mainaccount.views.index' %}">Apti -Q</a></h2>
+				<h2><a href="{% url 'index' %}">Apti -Q</a></h2>
 			</div>
 			<div class="col-md-8 footer-class">
-				<p >© 2015 AptiQ. All Rights Reserved | Design by  <a href="{% url 'mainaccount.views.buy' %}" target="_blank">DTU guys</a> </p>
+				<p >© 2015 AptiQ. All Rights Reserved | Design by  <a href="{% url 'buy' %}" target="_blank">DTU guys</a> </p>
 			</div>
 		<div class="clearfix"> </div>
 	 	</div>

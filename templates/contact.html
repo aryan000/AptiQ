@@ -31,12 +31,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="container-fluid">
 				<nav class="pull">
 					<ul>
-						<li><a  href="{% url 'mainaccount.views.index' %} ">Home</a></li>
-						<li><a  href="{% url 'mainaccount.views.about' %} ">About Us</a></li>
-						<li><a  href="{% url 'mainaccount.views.blog' %} ">Blog</a></li>
-						<li><a  href="{% url 'mainaccount.views.terms' %}">Terms</a></li>
-						<li><a  href="{% url 'mainaccount.views.privacy' %}">Privacy</a></li>
-						<li><a  href="{% url 'mainaccount.views.contact' %}">Contact</a></li>
+						<li><a  href="{% url 'index' %} ">Home</a></li>
+						<li><a  href="{% url 'about' %} ">About Us</a></li>
+						<li><a  href="{% url 'blog' %} ">Blog</a></li>
+						<li><a  href="{% url 'terms' %}">Terms</a></li>
+						<li><a  href="{% url 'privacy' %}">Privacy</a></li>
+						<li><a  href="{% url 'contact' %}">Contact</a></li>
 					</ul>
 				</nav>			
 			</div>
@@ -46,7 +46,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="container">
 		<!--logo-->
 			<div class="logo">
-				<h1><a href="{% url 'mainaccount.views.index' %}">Apti</a><a font color="blue" href="{% url 'mainaccount.views.index' %}">Q</a></h1>
+				<h1><a href="{% url 'index' %}">Apti</a><a font color="blue" href="{% url 'index' %}">Q</a></h1>
 			</div>
 		<!--//logo-->
 		<div class="top-nav">
@@ -232,12 +232,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-3 amet-sed">
 				<h4>Our Company</h4>
 				<ul class="nav-bottom">
-					<li><a href="{% url 'mainaccount.views.about'%}">About Us</a></li>
+					<li><a href="{% url 'about'%}">About Us</a></li>
 					<!--<li><a href="blog.html"> Blog</a></li>-->
-					<li><a href="{% url 'mainaccount.views.mobile_app'%}">Mobile</a></li>
-					<li><a href="{% url 'mainaccount.views.terms'%}">Terms & Conditions</a></li>
-					<li><a href="{% url 'mainaccount.views.privacy'%}">Privacy Policy</a></li>	
-					<li><a href="{% url 'mainaccount.views.blog'%}">Blog</a></li>
+					<li><a href="{% url 'mobile_app'%}">Mobile</a></li>
+					<li><a href="{% url 'terms'%}">Terms & Conditions</a></li>
+					<li><a href="{% url 'privacy'%}">Privacy Policy</a></li>	
+					<li><a href="{% url 'blog'%}">Blog</a></li>
 					
 				</ul>	
 			</div>
@@ -245,11 +245,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<h4>Work With Us</h4>
 					<ul class="nav-bottom">
 						<!--<li><a href="single.html">Real Estate Brokers</a></li>-->
-						<li><a href="{% url 'mainaccount.views.single' %}">Business Development</a></li>
-						<li><a href="{% url 'mainaccount.views.single' %}">Affiliate Programs</a></li>
-						<li><a href="{% url 'mainaccount.views.contact' %}">Sitemap</a></li>
-						<li><a href="{% url 'mainaccount.views.career' %}">Careers</a></li>
-						<li><a href="{% url 'mainaccount.views.feedback' %}">Feedback</a></li>	
+						<li><a href="{% url 'single' %}">Business Development</a></li>
+						<li><a href="{% url 'single' %}">Affiliate Programs</a></li>
+						<li><a href="{% url 'contact' %}">Sitemap</a></li>
+						<li><a href="{% url 'career' %}">Careers</a></li>
+						<li><a href="{% url 'feedback' %}">Feedback</a></li>	
 					</ul>	
 			</div>
 			<div class="col-md-3 amet-sed">
@@ -259,8 +259,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<p>177-869-6559</p>
 					<ul class="nav-bottom">
 						<li><a href="#">Live Chat</a></li>
-						<li><a href="{% url 'mainaccount.views.faqs' %}">Frequently Asked Questions</a></li>
-						<li><a href="{% url 'mainaccount.views.suggestion' %}">Make a Suggestion</a></li>
+						<li><a href="{% url 'faqs' %}">Frequently Asked Questions</a></li>
+						<li><a href="{% url 'suggestion' %}">Make a Suggestion</a></li>
 					</ul>	
 			</div>
 			<div class="col-md-3 amet-sed ">
@@ -272,10 +272,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="footer-bottom">
 		<div class="container">
 			<div class="col-md-4 footer-logo">
-				<h2><a href="{% url 'mainaccount.views.index' %}">Apti -Q</a></h2>
+				<h2><a href="{% url 'index' %}">Apti -Q</a></h2>
 			</div>
 			<div class="col-md-8 footer-class">
-				<p >© 2015 AptiQ. All Rights Reserved | Design by  <a href="{% url 'mainaccount.views.buy' %}" target="_blank">DTU guys</a> </p>
+				<p >© 2015 AptiQ. All Rights Reserved | Design by  <a href="{% url 'buy' %}" target="_blank">DTU guys</a> </p>
 			</div>
 		<div class="clearfix"> </div>
 	 	</div>

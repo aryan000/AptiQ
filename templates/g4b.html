@@ -46,12 +46,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
       <div class="container-fluid">
         <nav class="pull">
           <ul>
-            <li><a  href="{% url 'mainaccount.views.index' %}">Home</a></li>
-            <li><a  href="{% url 'mainaccount.views.about' %}">About Us</a></li>
-            <li><a  href="{% url 'mainaccount.views.blog' %}">Blog</a></li>
-            <li><a  href="{% url 'mainaccount.views.terms' %}">Terms</a></li>
-            <li><a  href="{% url 'mainaccount.views.privacy' %}">Privacy</a></li>
-            <li><a  href="{% url 'mainaccount.views.contact' %}">Contact</a></li>
+            <li><a  href="{% url 'index' %}">Home</a></li>
+            <li><a  href="{% url 'about' %}">About Us</a></li>
+            <li><a  href="{% url 'blog' %}">Blog</a></li>
+            <li><a  href="{% url 'terms' %}">Terms</a></li>
+            <li><a  href="{% url 'privacy' %}">Privacy</a></li>
+            <li><a  href="{% url 'contact' %}">Contact</a></li>
           </ul>
         </nav>       
       </div>
@@ -61,7 +61,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
   <div class="container">
     <!--logo-->
       <div class="logo">
-        <h1><a href="{% url 'mainaccount.views.index' %}">Apti</a><a font color="blue" href="{% url 'mainaccount.views.index' %}">Q</a></h1>
+        <h1><a href="{% url 'index' %}">Apti</a><a font color="blue" href="{% url 'index' %}">Q</a></h1>
       </div>
     <!--//logo-->
     <div class="top-nav">
@@ -277,11 +277,11 @@ document.getElementById("cont2").style.visibility="visible";
 
       <div id="cont1" class="alert alert-success" role="alert" visibility="hidden">
         <strong>Well done!</strong> You successfully qualified for next level.
-      <a href="{% url 'mainaccount.views.leveltest2' %}" type="button" class="btn btn-lg btn-success">Next Level </a>
+      <a href="{% url 'leveltest2' %}" type="button" class="btn btn-lg btn-success">Next Level </a>
       </div>
      <div id="cont2" class="alert alert-danger" role="alert" visibility="hidden">
         <strong>Oh snap!</strong> U didn't qualify for next level.Try again!
-        <a href="{% url 'mainaccount.views.leveltest' %}" type="button" class="btn btn-lg btn-success">Try again </a>
+        <a href="{% url 'leveltest' %}" type="button" class="btn btn-lg btn-success">Try again </a>
      </div>
   <script>
   /*  var ra = function(i){ return can[i]};

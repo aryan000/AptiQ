@@ -123,12 +123,12 @@ window.alert(can[3]);
 			<div class="container-fluid">
 				<nav class="pull">
 					<ul>
-						<li><a  href="{% url 'mainaccount.views.index' %}">Home</a></li>
-						<li><a  href="{% url 'mainaccount.views.about' %}">About Us</a></li>
-						<li><a  href="{% url 'mainaccount.views.blog' %}">Blog</a></li>
-						<li><a  href="{% url 'mainaccount.views.terms' %}">Terms</a></li>
-						<li><a  href="{% url 'mainaccount.views.privacy' %}">Privacy</a></li>
-						<li><a  href="{% url 'mainaccount.views.contact' %}">Contact</a></li>
+						<li><a  href="{% url 'index' %}">Home</a></li>
+						<li><a  href="{% url 'about' %}">About Us</a></li>
+						<li><a  href="{% url 'blog' %}">Blog</a></li>
+						<li><a  href="{% url 'terms' %}">Terms</a></li>
+						<li><a  href="{% url 'privacy' %}">Privacy</a></li>
+						<li><a  href="{% url 'contact' %}">Contact</a></li>
 					</ul>
 				</nav>	
 			</div>
@@ -138,7 +138,7 @@ window.alert(can[3]);
 	<div class="container">
 		<!--logo-->
 			<div class="logo">
-				<h1><a href="{% url 'mainaccount.views.index' %}">Apti</a><a font color="blue" href="{% url 'mainaccount.views.index' %}">Q</a></h1>
+				<h1><a href="{% url 'index' %}">Apti</a><a font color="blue" href="{% url 'index' %}">Q</a></h1>
 			</div>
 		<!--//logo-->
 		<div class="top-nav">
@@ -275,7 +275,7 @@ function sendData()
     }
     packed += escape(can[i]);
   }
-  window.location = "{% url 'mainaccount.views.graph4beg' %}?	" + packed;
+  window.location = "{% url 'graph4beg' %}?	" + packed;
   
 }
 </script>
@@ -302,7 +302,7 @@ function sendData2()
     }
     packed += escape(can[i]);
   }
-  window.location = "{% url 'mainaccount.views.p3b' %}?" + packed;
+  window.location = "{% url 'p3b' %}?" + packed;
   
 }
 </script>

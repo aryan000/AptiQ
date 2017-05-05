@@ -31,12 +31,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="container-fluid">
 				<nav class="pull">
 					<ul>
-						<li><a  href="{% url 'mainaccount.views.index' %} ">Home</a></li>
-						<li><a  href="{% url 'mainaccount.views.about' %} ">About Us</a></li>
-						<li><a  href="{% url 'mainaccount.views.blog' %} ">Blog</a></li>
-						<li><a  href="{% url 'mainaccount.views.terms' %}">Terms</a></li>
-						<li><a  href="{% url 'mainaccount.views.privacy' %}">Privacy</a></li>
-						<li><a  href="{% url 'mainaccount.views.contact' %}">Contact</a></li>
+						<li><a  href="{% url 'index' %} ">Home</a></li>
+						<li><a  href="{% url 'about' %} ">About Us</a></li>
+						<li><a  href="{% url 'blog' %} ">Blog</a></li>
+						<li><a  href="{% url 'terms' %}">Terms</a></li>
+						<li><a  href="{% url 'privacy' %}">Privacy</a></li>
+						<li><a  href="{% url 'contact' %}">Contact</a></li>
 					</ul>
 				</nav>			
 			</div>
@@ -46,7 +46,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="container">
 		<!--logo-->
 			<div class="logo">
-				<h1><a href="{% url 'mainaccount.views.index' %}">Apti</a><a font color="blue" href="{% url 'mainaccount.views.index' %}">Q</a></h1>
+				<h1><a href="{% url 'index' %}">Apti</a><a font color="blue" href="{% url 'index' %}">Q</a></h1>
 			</div>
 		<!--//logo-->
 		<div class="top-nav">
@@ -150,13 +150,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		 <ul class="menu">
 			<li class="item1"><a href="#"> Menu<i class="glyphicon glyphicon-menu-down"> </i> </a>
 			<ul class="cute">
-				<li class="subitem1"><a href="{% url 'mainaccount.views.buy' %}">Buy </a></li>
-				<li class="subitem2"><a href="{% url 'mainaccount.views.buy' %}">Rent </a></li>
-				<li class="subitem3"><a href="{% url 'mainaccount.views.buy' %}">Hostels </a></li>
-				<li class="subitem1"><a href="{% url 'mainaccount.views.buy' %}">Resale</a></li>
-				<li class="subitem2"><a href="{% url 'mainaccount.views.loan' %}">Home Loan</a></li>
-				<li class="subitem3"><a href="{% url 'mainaccount.views.buy' %}">Apartment </a></li>
-				<li class="subitem3"><a href="{% url 'mainaccount.views.dealers' %}">Dealers</a></li>
+				<li class="subitem1"><a href="{% url 'buy' %}">Buy </a></li>
+				<li class="subitem2"><a href="{% url 'buy' %}">Rent </a></li>
+				<li class="subitem3"><a href="{% url 'buy' %}">Hostels </a></li>
+				<li class="subitem1"><a href="{% url 'buy' %}">Resale</a></li>
+				<li class="subitem2"><a href="{% url 'loan' %}">Home Loan</a></li>
+				<li class="subitem3"><a href="{% url 'buy' %}">Apartment </a></li>
+				<li class="subitem3"><a href="{% url 'dealers' %}">Dealers</a></li>
 			</ul>
 		</li>
 		</ul>
@@ -223,33 +223,33 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="container">
 			<h3>Most Popular</h3>
 				<div class="col-md-4 box_2">
-			     	 <a href="{% url 'mainaccount.views.single'%}" class="mask">
+			     	 <a href="{% url 'single'%}" class="mask">
 			     	   	<img class="img-responsive zoom-img" src="/static/images/pc4.jpg" alt="">
 			     	   	<span class="four">5000 users</span>
 			     	 </a>
 			     	   <div class="most-1">
-			     	   	 <h5><a href="{% url 'mainaccount.views.single'%}">VERBAL REASONING</a></h5>
+			     	   	 <h5><a href="{% url 'single'%}">VERBAL REASONING</a></h5>
 			     	    	<p>TEST SERIES-1</p>
 			     	   </div>
 			 </div>
 			  <div class="col-md-4 box_2">
-		     	 <a href="{% url 'mainaccount.views.single'%}" class="mask">
+		     	 <a href="{% url 'single'%}" class="mask">
 			     	   	<img class="img-responsive zoom-img" src="/static/images/pc5.jpg" alt="">
 			     	   	<span class="four">3419 users</span>
 			     	 </a>
 		     	   <div class="most-1">
-			     	   	<h5><a href="{% url 'mainaccount.views.single'%}">Mathematical Analysis</a></h5>
+			     	   	<h5><a href="{% url 'single'%}">Mathematical Analysis</a></h5>
 			     	    	<p>TEST SERIES-2</p>
 			     	   </div>
 		     	
 		      </div>
 			  <div class="col-md-4 box_2">
-		     	 <a href="{% url 'mainaccount.views.single'%}" class="mask">
+		     	 <a href="{% url 'single'%}" class="mask">
 			     	   	<img class="img-responsive zoom-img" src="/static/images/pc3.jpg" alt="" >
 			     	   	<span class="four">2100 users</span>
 			     	 </a>
 		     	   <div class="most-1">
-			     	   	 <h5><a href="{% url 'mainaccount.views.single'%}">DATA INTERPRETATION</a></h5>
+			     	   	 <h5><a href="{% url 'single'%}">DATA INTERPRETATION</a></h5>
 			     	    	<p>TEST SERIES-1</p>
 			     	   </div>
 		     	
@@ -338,7 +338,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="mid-content">
 					<h3>what's new</h3>
 					<p>Random newly added courses / tests.</p>
-					<a class="hvr-sweep-to-right more-in" href="{% url 'mainaccount.views.single'%}">Read More</a>
+					<a class="hvr-sweep-to-right more-in" href="{% url 'single'%}">Read More</a>
 				</div>
 			</div>
 		</div>
@@ -363,7 +363,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<h5>Quick review</h5>
 						<p>Get on the go quizzes and Reviews.</p>
 					</div>
-					<a href="{% url 'mainaccount.views.mobile_app'%}" class="hvr-sweep-to-right more">Download the App</a>
+					<a href="{% url 'mobile_app'%}" class="hvr-sweep-to-right more">Download the App</a>
 			</div>
 		</div>
 	</div>
@@ -375,7 +375,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="project-top">
 					<div class="col-md-3 project-grid">
 						<div class="project-grid-top">
-							 <a href="{% url 'mainaccount.views.mobile_app'%}" class="mask"><img src="/static/images/ga.jpg" class="img-responsive zoom-img" alt=""/></a>
+							 <a href="{% url 'mobile_app'%}" class="mask"><img src="/static/images/ga.jpg" class="img-responsive zoom-img" alt=""/></a>
 							 <div class="col-md1">
 								 <div class="col-md2">
 									 <div class="col-md3">
@@ -389,13 +389,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								 </div>
 								 <!--<p>2, 3, 4 BHK Flats</p>
 								 <p class="cost">$65,000</p>-->
-								 <a href="{% url 'mainaccount.views.mobile_app'%}" class="hvr-sweep-to-right more">See Details</a>
+								 <a href="{% url 'mobile_app'%}" class="hvr-sweep-to-right more">See Details</a>
 							 </div>
 						</div>
 					</div>
 					<div class="col-md-3 project-grid">
 						<div class="project-grid-top">
-							  <a href="{% url 'mainaccount.views.single'%}" class="mask"><img src="/static/images/ga1.jpg" class="img-responsive zoom-img" alt=""/></a>
+							  <a href="{% url 'single'%}" class="mask"><img src="/static/images/ga1.jpg" class="img-responsive zoom-img" alt=""/></a>
 							 <div class="col-md1">
 								 <div class="col-md2">
 									 <div class="col-md3">
@@ -409,7 +409,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								 </div>
 								 <!--<p>2, 3, 4 BHK Flats</p>
 								 <p class="cost">$65,000</p>-->
-								 <a href="{% url 'mainaccount.views.single'%}" class="hvr-sweep-to-right more">See Details</a>
+								 <a href="{% url 'single'%}" class="hvr-sweep-to-right more">See Details</a>
 							 </div>
 						</div>
 					</div>
@@ -537,12 +537,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-3 amet-sed">
 				<h4>Our Company</h4>
 				<ul class="nav-bottom">
-					<li><a href="{% url 'mainaccount.views.about'%}">About Us</a></li>
+					<li><a href="{% url 'about'%}">About Us</a></li>
 					<!--<li><a href="blog.html"> Blog</a></li>-->
-					<li><a href="{% url 'mainaccount.views.mobile_app'%}">Mobile</a></li>
-					<li><a href="{% url 'mainaccount.views.terms'%}">Terms & Conditions</a></li>
-					<li><a href="{% url 'mainaccount.views.privacy'%}">Privacy Policy</a></li>	
-					<li><a href="{% url 'mainaccount.views.blog'%}">Blog</a></li>
+					<li><a href="{% url 'mobile_app'%}">Mobile</a></li>
+					<li><a href="{% url 'terms'%}">Terms & Conditions</a></li>
+					<li><a href="{% url 'privacy'%}">Privacy Policy</a></li>	
+					<li><a href="{% url 'blog'%}">Blog</a></li>
 					
 				</ul>	
 			</div>
@@ -550,11 +550,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<h4>Work With Us</h4>
 					<ul class="nav-bottom">
 						<!--<li><a href="single.html">Real Estate Brokers</a></li>-->
-						<li><a href="{% url 'mainaccount.views.single' %}">Business Development</a></li>
-						<li><a href="{% url 'mainaccount.views.single' %}">Affiliate Programs</a></li>
-						<li><a href="{% url 'mainaccount.views.contact' %}">Sitemap</a></li>
-						<li><a href="{% url 'mainaccount.views.career' %}">Careers</a></li>
-						<li><a href="{% url 'mainaccount.views.feedback' %}">Feedback</a></li>	
+						<li><a href="{% url 'single' %}">Business Development</a></li>
+						<li><a href="{% url 'single' %}">Affiliate Programs</a></li>
+						<li><a href="{% url 'contact' %}">Sitemap</a></li>
+						<li><a href="{% url 'career' %}">Careers</a></li>
+						<li><a href="{% url 'feedback' %}">Feedback</a></li>	
 					</ul>	
 			</div>
 			<div class="col-md-3 amet-sed">
@@ -564,8 +564,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<p>177-869-6559</p>
 					<ul class="nav-bottom">
 						<li><a href="#">Live Chat</a></li>
-						<li><a href="{% url 'mainaccount.views.faqs' %}">Frequently Asked Questions</a></li>
-						<li><a href="{% url 'mainaccount.views.suggestion' %}">Make a Suggestion</a></li>
+						<li><a href="{% url 'faqs' %}">Frequently Asked Questions</a></li>
+						<li><a href="{% url 'suggestion' %}">Make a Suggestion</a></li>
 					</ul>	
 			</div>
 			<div class="col-md-3 amet-sed ">
@@ -591,10 +591,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="footer-bottom">
 		<div class="container">
 			<div class="col-md-4 footer-logo">
-				<h2><a href="{% url 'mainaccount.views.index' %}">Apti -Q</a></h2>
+				<h2><a href="{% url 'index' %}">Apti -Q</a></h2>
 			</div>
 			<div class="col-md-8 footer-class">
-				<p >© 2015 AptiQ. All Rights Reserved | Design by  <a href="{% url 'mainaccount.views.buy' %}" target="_blank">DTU guys</a> </p>
+				<p >© 2015 AptiQ. All Rights Reserved | Design by  <a href="{% url 'buy' %}" target="_blank">DTU guys</a> </p>
 			</div>
 		<div class="clearfix"> </div>
 	 	</div>

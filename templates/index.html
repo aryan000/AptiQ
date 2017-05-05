@@ -42,12 +42,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="container-fluid">
 				<nav class="pull">
 					<ul>
-						<li><a  href="{% url 'mainaccount.views.index' %}">Home</a></li>
-						<li><a  href="{% url 'mainaccount.views.about' %}">About Us</a></li>
-						<li><a  href="{% url 'mainaccount.views.blog' %}">Blog</a></li>
-						<li><a  href="{% url 'mainaccount.views.terms' %}">Terms</a></li>
-						<li><a  href="{% url 'mainaccount.views.privacy' %}">Privacy</a></li>
-						<li><a  href="{% url 'mainaccount.views.contact' %}">Contact</a></li>
+						<li><a  href="{% url 'index' %}">Home</a></li>
+						<li><a  href="{% url 'about' %}">About Us</a></li>
+						<li><a  href="{% url 'blog' %}">Blog</a></li>
+						<li><a  href="{% url 'terms' %}">Terms</a></li>
+						<li><a  href="{% url 'privacy' %}">Privacy</a></li>
+						<li><a  href="{% url 'contact' %}">Contact</a></li>
 					</ul>
 				</nav>			
 			</div>
@@ -57,8 +57,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="container">
 		<!--logo-->
 			<div class="logo">
-				<h1><a href="{% url 'mainaccount.views.index' %}">Apti</a><a font color="blue" 
-				href="{% url 'mainaccount.views.index' %}">Q</a></h1>
+				<h1><a href="{% url 'index' %}">Apti</a><a font color="blue" 
+				href="{% url 'index' %}">Q</a></h1>
 			</div>
 		<!--//logo-->
 		<div class="top-nav">
@@ -195,7 +195,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="bottom-header">
 				<div class="header-bottom">
 					<div class=" bottom-head">
-						<a href="{% url 'mainaccount.views.sampletest' %}">
+						<a href="{% url 'sampletest' %}">
 							<div class="buy-media">
 								<i class="buy"> </i>
 								<h6>Try Sample Test</h6>
@@ -203,7 +203,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</a>
 					</div>
 					<div class=" bottom-head">
-						<a href="{% url 'mainaccount.views.dealers'%}">
+						<a href="{% url 'dealers' %}">
 							<div class="buy-media">
 							<i class="rent"> </i>
 							<h6>Courses</h6>
@@ -211,7 +211,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</a>
 					</div>
 					<!--div class=" bottom-head">
-						<a href="{% url 'mainaccount.views.buy' %}">
+						<a href="{% url 'buy' %}">
 							<div class="buy-media">
 							<i class="pg"> </i>
 							<h6>Try</h6>
@@ -235,7 +235,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</a>
 					</div-->
 					<div class=" bottom-head">
-						<a href="{% url 'mainaccount.views.table'%} ">
+						<a href="{% url 'table'%} ">
 							<div class="buy-media">
 							<i class="apart"> </i>
 							<h6>Some genius Iq's</h6>
@@ -243,7 +243,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</a>
 					</div>
 					<div class=" bottom-head">
-						<a href="{% url 'mainaccount.views.buy' %}">
+						<a href="{% url 'buy' %}">
 							<div class="buy-media">
 							<i class="deal"> </i>
 							<h6>Our team</h6>
@@ -267,33 +267,33 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="container">
 			<h3>Most Popular</h3>
 				<div class="col-md-4 box_2">
-			     	 <a href="{% url 'mainaccount.views.single'%}" class="mask">
+			     	 <a href="{% url 'single'%}" class="mask">
 			     	   	<img class="img-responsive zoom-img" src="/static/images/pc4.jpg" alt="">
 			     	   	<span class="four">5000 users</span>
 			     	 </a>
 			     	   <div class="most-1">
-			     	   	 <h5><a href="{% url 'mainaccount.views.single'%}">VERBAL REASONING</a></h5>
+			     	   	 <h5><a href="{% url 'single'%}">VERBAL REASONING</a></h5>
 			     	    	<p>TEST SERIES-1</p>
 			     	   </div>
 			 </div>
 			  <div class="col-md-4 box_2">
-		     	 <a href="{% url 'mainaccount.views.single'%}" class="mask">
+		     	 <a href="{% url 'single'%}" class="mask">
 			     	   	<img class="img-responsive zoom-img" src="/static/images/pc5.jpg" alt="">
 			     	   	<span class="four">3419 users</span>
 			     	 </a>
 		     	   <div class="most-1">
-			     	   	<h5><a href="{% url 'mainaccount.views.single'%}">Mathematical Analysis</a></h5>
+			     	   	<h5><a href="{% url 'single'%}">Mathematical Analysis</a></h5>
 			     	    	<p>TEST SERIES-2</p>
 			     	   </div>
 		     	
 		      </div>
 			  <div class="col-md-4 box_2">
-		     	 <a href="{% url 'mainaccount.views.single'%}" class="mask">
+		     	 <a href="{% url 'single'%}" class="mask">
 			     	   	<img class="img-responsive zoom-img" src="/static/images/pc3.jpg" alt="" >
 			     	   	<span class="four">2100 users</span>
 			     	 </a>
 		     	   <div class="most-1">
-			     	   	 <h5><a href="{% url 'mainaccount.views.single'%}">DATA INTERPRETATION</a></h5>
+			     	   	 <h5><a href="{% url 'single'%}">DATA INTERPRETATION</a></h5>
 			     	    	<p>TEST SERIES-1</p>
 			     	   </div>
 		     	
@@ -382,7 +382,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="mid-content">
 					<h3>what's new</h3>
 					<p>Random newly added courses / tests.</p>
-					<a class="hvr-sweep-to-right more-in" href="{% url 'mainaccount.views.single'%}">Read More</a>
+					<a class="hvr-sweep-to-right more-in" href="{% url 'single'%}">Read More</a>
 				</div>
 			</div>
 		</div>
@@ -407,7 +407,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<h5>Quick review</h5>
 						<p>Get on the go quizzes and Reviews.</p>
 					</div>
-					<a href="{% url 'mainaccount.views.mobile_app'%}" class="hvr-sweep-to-right more">Download the App</a>
+					<a href="{% url 'mobile_app'%}" class="hvr-sweep-to-right more">Download the App</a>
 			</div>
 		</div>
 	</div>
@@ -419,7 +419,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="project-top">
 					<div class="col-md-3 project-grid">
 						<div class="project-grid-top">
-							 <a href="{% url 'mainaccount.views.mobile_app'%}" class="mask"><img src="/static/images/ga.jpg" class="img-responsive zoom-img" alt=""/></a>
+							 <a href="{% url 'mobile_app'%}" class="mask"><img src="/static/images/ga.jpg" class="img-responsive zoom-img" alt=""/></a>
 							 <div class="col-md1">
 								 <div class="col-md2">
 									 <div class="col-md3">
@@ -433,13 +433,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								 </div>
 								 <!--<p>2, 3, 4 BHK Flats</p>
 								 <p class="cost">$65,000</p>-->
-								 <a href="{% url 'mainaccount.views.mobile_app'%}" class="hvr-sweep-to-right more">See Details</a>
+								 <a href="{% url 'mobile_app'%}" class="hvr-sweep-to-right more">See Details</a>
 							 </div>
 						</div>
 					</div>
 					<div class="col-md-3 project-grid">
 						<div class="project-grid-top">
-							  <a href="{% url 'mainaccount.views.single'%}" class="mask"><img src="/static/images/ga1.jpg" class="img-responsive zoom-img" alt=""/></a>
+							  <a href="{% url 'single'%}" class="mask"><img src="/static/images/ga1.jpg" class="img-responsive zoom-img" alt=""/></a>
 							 <div class="col-md1">
 								 <div class="col-md2">
 									 <div class="col-md3">
@@ -453,7 +453,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 								 </div>
 								 <!--<p>2, 3, 4 BHK Flats</p>
 								 <p class="cost">$65,000</p>-->
-								 <a href="{% url 'mainaccount.views.single'%}" class="hvr-sweep-to-right more">See Details</a>
+								 <a href="{% url 'single'%}" class="hvr-sweep-to-right more">See Details</a>
 							 </div>
 						</div>
 					</div>
@@ -581,12 +581,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="col-md-3 amet-sed">
 				<h4>Our Company</h4>
 				<ul class="nav-bottom">
-					<li><a href="{% url 'mainaccount.views.about'%}">About Us</a></li>
+					<li><a href="{% url 'about'%}">About Us</a></li>
 					<!--<li><a href="blog.html"> Blog</a></li>-->
-					<li><a href="{% url 'mainaccount.views.mobile_app'%}">Mobile</a></li>
-					<li><a href="{% url 'mainaccount.views.terms'%}">Terms & Conditions</a></li>
-					<li><a href="{% url 'mainaccount.views.privacy'%}">Privacy Policy</a></li>	
-					<li><a href="{% url 'mainaccount.views.blog'%}">Blog</a></li>
+					<li><a href="{% url 'mobile_app'%}">Mobile</a></li>
+					<li><a href="{% url 'terms'%}">Terms & Conditions</a></li>
+					<li><a href="{% url 'privacy'%}">Privacy Policy</a></li>	
+					<li><a href="{% url 'blog'%}">Blog</a></li>
 					
 				</ul>	
 			</div>
@@ -594,11 +594,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<h4>Work With Us</h4>
 					<ul class="nav-bottom">
 						<!--<li><a href="single.html">Real Estate Brokers</a></li>-->
-						<li><a href="{% url 'mainaccount.views.single' %}">Business Development</a></li>
-						<li><a href="{% url 'mainaccount.views.single' %}">Affiliate Programs</a></li>
-						<li><a href="{% url 'mainaccount.views.contact' %}">Sitemap</a></li>
-						<li><a href="{% url 'mainaccount.views.career' %}">Careers</a></li>
-						<li><a href="{% url 'mainaccount.views.feedback' %}">Feedback</a></li>	
+						<li><a href="{% url 'single' %}">Business Development</a></li>
+						<li><a href="{% url 'single' %}">Affiliate Programs</a></li>
+						<li><a href="{% url 'contact' %}">Sitemap</a></li>
+						<li><a href="{% url 'career' %}">Careers</a></li>
+						<li><a href="{% url 'feedback' %}">Feedback</a></li>	
 					</ul>	
 			</div>
 			<div class="col-md-3 amet-sed">
@@ -608,8 +608,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<p>177-869-6559</p>
 					<ul class="nav-bottom">
 						<li><a href="#">Live Chat</a></li>
-						<li><a href="{% url 'mainaccount.views.faqs' %}">Frequently Asked Questions</a></li>
-						<li><a href="{% url 'mainaccount.views.suggestion' %}">Make a Suggestion</a></li>
+						<li><a href="{% url 'faqs' %}">Frequently Asked Questions</a></li>
+						<li><a href="{% url 'suggestion' %}">Make a Suggestion</a></li>
 					</ul>	
 			</div>
 			<div class="col-md-3 amet-sed ">
@@ -635,10 +635,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="footer-bottom">
 		<div class="container">
 			<div class="col-md-4 footer-logo">
-				<h2><a href="{% url 'mainaccount.views.index' %}">Apti -Q</a></h2>
+				<h2><a href="{% url 'index' %}">Apti -Q</a></h2>
 			</div>
 			<div class="col-md-8 footer-class">
-				<p >© 2015 AptiQ. All Rights Reserved | Design by  <a href="{% url 'mainaccount.views.buy' %}" target="_blank">DTU guys</a> </p>
+				<p >© 2015 AptiQ. All Rights Reserved | Design by  <a href="{% url 'buy' %}" target="_blank">DTU guys</a> </p>
 			</div>
 		<div class="clearfix"> </div>
 	 	</div>

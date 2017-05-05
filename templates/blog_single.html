@@ -31,12 +31,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="container-fluid">
 				<nav class="pull">
 					<ul>
-						<li><a  href="{% url 'mainaccount.views.index' %} ">Home</a></li>
-						<li><a  href="{% url 'mainaccount.views.about' %} ">About Us</a></li>
-						<li><a  href="{% url 'mainaccount.views.blog' %} ">Blog</a></li>
-						<li><a  href="{% url 'mainaccount.views.terms' %}">Terms</a></li>
-						<li><a  href="{% url 'mainaccount.views.privacy' %}">Privacy</a></li>
-						<li><a  href="{% url 'mainaccount.views.contact' %}">Contact</a></li>
+						<li><a  href="{% url 'index' %} ">Home</a></li>
+						<li><a  href="{% url 'about' %} ">About Us</a></li>
+						<li><a  href="{% url 'blog' %} ">Blog</a></li>
+						<li><a  href="{% url 'terms' %}">Terms</a></li>
+						<li><a  href="{% url 'privacy' %}">Privacy</a></li>
+						<li><a  href="{% url 'contact' %}">Contact</a></li>
 					</ul>
 				</nav>			
 			</div>
@@ -46,7 +46,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<div class="container">
 		<!--logo-->
 			<div class="logo">
-				<h1><a href="{% url 'mainaccount.views.index' %}">Apti</a><a font color="blue" href="{% url 'mainaccount.views.index' %}">Q</a></h1>
+				<h1><a href="{% url 'index' %}">Apti</a><a font color="blue" href="{% url 'index' %}">Q</a></h1>
 			</div>
 		<!--//logo-->
 		<div class="top-nav">
@@ -150,13 +150,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		 <!-- <ul class="menu">
 			<li class="item1"><a href="#"> Menu<i class="glyphicon glyphicon-menu-down"> </i> </a>
 			<ul class="cute">
-				<li class="subitem1"><a href="{% url 'mainaccount.views.buy' %}">Buy </a></li>
-				<li class="subitem2"><a href="{% url 'mainaccount.views.buy' %}">Rent </a></li>
-				<li class="subitem3"><a href="{% url 'mainaccount.views.buy' %}">Hostels </a></li>
-				<li class="subitem1"><a href="{% url 'mainaccount.views.buy' %}">Resale </a></li>
-				<li class="subitem2"><a href="{% url 'mainaccount.views.loan' %}">Home Loan</a></li>
-				<li class="subitem3"><a href="{% url 'mainaccount.views.buy' %}">Apartment </a></li>
-				<li class="subitem3"><a href="{% url 'mainaccount.views.dealers' %}">Dealers</a></li>
+				<li class="subitem1"><a href="{% url 'buy' %}">Buy </a></li>
+				<li class="subitem2"><a href="{% url 'buy' %}">Rent </a></li>
+				<li class="subitem3"><a href="{% url 'buy' %}">Hostels </a></li>
+				<li class="subitem1"><a href="{% url 'buy' %}">Resale </a></li>
+				<li class="subitem2"><a href="{% url 'loan' %}">Home Loan</a></li>
+				<li class="subitem3"><a href="{% url 'buy' %}">Apartment </a></li>
+				<li class="subitem3"><a href="{% url 'dealers' %}">Dealers</a></li>
 			</ul>
 		</li>
 		</ul> -->
@@ -335,7 +335,7 @@ With the convergence of cheaper computing, faster algorithms and ample data, art
 	     	<h4>Popular Posts</h4>
 			<div class="blog-list-top">
 				<div class="blog-img">
-					<a href="{% url 'mainaccount.views.blog_single' %}"><img class="img-responsive" src="/static/images/bo.jpg" alt="">
+					<a href="{% url 'blog_single' %}"><img class="img-responsive" src="/static/images/bo.jpg" alt="">
 				</div>
 				<div class="blog-text">
 					<p ><a href="#">Building Meritocracy in Tech</a></p>
@@ -350,10 +350,10 @@ With the convergence of cheaper computing, faster algorithms and ample data, art
 			</div>
 			<div class="blog-list-top">
 				<div class="blog-img">
-					<a href="{% url 'mainaccount.views.blog_single' %} "><img class="img-responsive" src="/static/images/bo1.jpg" alt=""></a>
+					<a href="{% url 'blog_single' %} "><img class="img-responsive" src="/static/images/bo1.jpg" alt=""></a>
 				</div>
 				<div class="blog-text">
-					<p ><a href="{% url 'mainaccount.views.blog_single' %} ">The Interdependency Of Stanford And Silicon Valley [Tech Crunch]</a></p>
+					<p ><a href="{% url 'blog_single' %} ">The Interdependency Of Stanford And Silicon Valley [Tech Crunch]</a></p>
 					<span class="link">
 						Feb 14, 2015
 						<a href="#">
@@ -365,10 +365,10 @@ With the convergence of cheaper computing, faster algorithms and ample data, art
 			</div>
 			<div class="blog-list-top">
 				<div class="blog-img">
-					<a href="{% url 'mainaccount.views.blog_single' %} "><img class="img-responsive" src="/static/images/bo2.jpg" alt=""></a>
+					<a href="{% url 'blog_single' %} "><img class="img-responsive" src="/static/images/bo2.jpg" alt=""></a>
 				</div>
 				<div class="blog-text">
-					<p ><a href="{% url 'mainaccount.views.blog_single' %} ">The Unhealthy Obsession with Tree Questions</a></p>
+					<p ><a href="{% url 'blog_single' %} ">The Unhealthy Obsession with Tree Questions</a></p>
 					<span class="link">
 						Feb 14, 2015
 						<a href="#">
@@ -380,10 +380,10 @@ With the convergence of cheaper computing, faster algorithms and ample data, art
 			</div>
 			<div class="blog-list-top">
 				<div class="blog-img">
-					<a href="{% url 'mainaccount.views.blog_single' %}"><img class="img-responsive" src="/static/images/bo3.jpg" alt=""></a>
+					<a href="{% url 'blog_single' %}"><img class="img-responsive" src="/static/images/bo3.jpg" alt=""></a>
 				</div>
 				<div class="blog-text">
-					<p ><a href="{% url 'mainaccount.views.blog_single' %} ">Why Many Computer Science Programs Are Stagnating</a></p>
+					<p ><a href="{% url 'blog_single' %} ">Why Many Computer Science Programs Are Stagnating</a></p>
 					<span class="link">
 						Feb 14, 2015
 						<a href="#">
@@ -395,10 +395,10 @@ With the convergence of cheaper computing, faster algorithms and ample data, art
 			</div>
 			<div class="blog-list-top">
 				<div class="blog-img">
-					<a href="{% url 'mainaccount.views.blog_single' %}"><img class="img-responsive" src="/static/images/bo4.jpg" alt=""></a>
+					<a href="{% url 'blog_single' %}"><img class="img-responsive" src="/static/images/bo4.jpg" alt=""></a>
 				</div>
 				<div class="blog-text">
-					<p ><a href="{% url 'mainaccount.views.blog_single' %}">War, Passion & the Origin of Computer Societies</a></p>
+					<p ><a href="{% url 'blog_single' %}">War, Passion & the Origin of Computer Societies</a></p>
 					<span class="link">
 						Feb 14, 2015
 						<a href="#">
@@ -438,12 +438,12 @@ With the convergence of cheaper computing, faster algorithms and ample data, art
 			<div class="col-md-3 amet-sed">
 				<h4>Our Company</h4>
 				<ul class="nav-bottom">
-					<li><a href="{% url 'mainaccount.views.about'%}">About Us</a></li>
+					<li><a href="{% url 'about'%}">About Us</a></li>
 					<!--<li><a href="blog.html"> Blog</a></li>-->
-					<li><a href="{% url 'mainaccount.views.mobile_app'%}">Mobile</a></li>
-					<li><a href="{% url 'mainaccount.views.terms'%}">Terms & Conditions</a></li>
-					<li><a href="{% url 'mainaccount.views.privacy'%}">Privacy Policy</a></li>	
-					<li><a href="{% url 'mainaccount.views.blog'%}">Blog</a></li>
+					<li><a href="{% url 'mobile_app'%}">Mobile</a></li>
+					<li><a href="{% url 'terms'%}">Terms & Conditions</a></li>
+					<li><a href="{% url 'privacy'%}">Privacy Policy</a></li>	
+					<li><a href="{% url 'blog'%}">Blog</a></li>
 					
 				</ul>	
 			</div>
@@ -451,11 +451,11 @@ With the convergence of cheaper computing, faster algorithms and ample data, art
 				<h4>Work With Us</h4>
 					<ul class="nav-bottom">
 						<!--<li><a href="single.html">Real Estate Brokers</a></li>-->
-						<li><a href="{% url 'mainaccount.views.single' %}">Business Development</a></li>
-						<li><a href="{% url 'mainaccount.views.single' %}">Affiliate Programs</a></li>
-						<li><a href="{% url 'mainaccount.views.contact' %}">Sitemap</a></li>
-						<li><a href="{% url 'mainaccount.views.career' %}">Careers</a></li>
-						<li><a href="{% url 'mainaccount.views.feedback' %}">Feedback</a></li>
+						<li><a href="{% url 'single' %}">Business Development</a></li>
+						<li><a href="{% url 'single' %}">Affiliate Programs</a></li>
+						<li><a href="{% url 'contact' %}">Sitemap</a></li>
+						<li><a href="{% url 'career' %}">Careers</a></li>
+						<li><a href="{% url 'feedback' %}">Feedback</a></li>
 					</ul>	
 			</div>
 			<div class="col-md-3 amet-sed">
@@ -465,8 +465,8 @@ With the convergence of cheaper computing, faster algorithms and ample data, art
 				<p>177-869-6559</p>
 					<ul class="nav-bottom">
 						<li><a href="#">Live Chat</a></li>
-						<li><a href="{% url 'mainaccount.views.faqs' %}">Frequently Asked Questions</a></li>
-						<li><a href="{% url 'mainaccount.views.suggestion' %}">Make a Suggestion</a></li>
+						<li><a href="{% url 'faqs' %}">Frequently Asked Questions</a></li>
+						<li><a href="{% url 'suggestion' %}">Make a Suggestion</a></li>
 					</ul>	
 			</div>
 			<div class="col-md-3 amet-sed ">
@@ -493,10 +493,10 @@ With the convergence of cheaper computing, faster algorithms and ample data, art
 		<div class="footer-bottom">
 		<div class="container">
 			<div class="col-md-4 footer-logo">
-				<h2><a href="{% url 'mainaccount.views.index' %}">Apti -Q</a></h2>
+				<h2><a href="{% url 'index' %}">Apti -Q</a></h2>
 			</div>
 			<div class="col-md-8 footer-class">
-				<p >© 2015 AptiQ. All Rights Reserved | Design by  <a href="{% url 'mainaccount.views.buy' %}" target="_blank">DTU guys</a> </p>
+				<p >© 2015 AptiQ. All Rights Reserved | Design by  <a href="{% url 'buy' %}" target="_blank">DTU guys</a> </p>
 			</div>
 		<div class="clearfix"> </div>
 	 	</div>
